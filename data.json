@@ -1,0 +1,952 @@
+{
+  "0": {
+    "page": "navbar",
+    "id": "0",
+    "logo": "/logoms.png",
+    "menu": [
+      {
+        "name": "Home",
+        "link": "/"
+      },
+      {
+        "name": "About US",
+        "link": "/about",
+        "submenu": [
+          {
+            "name": "Our Purpose and Values",
+            "link": "/values"
+          },
+          {
+            "name": "How We Deliver",
+            "link": "/deliver"
+          },
+          {
+            "name": "Leadership",
+            "link": "/leadership"
+          },
+          {
+            "name": "Health & Safety",
+            "link": "/health"
+          },
+          {
+            "name": "Career",
+            "link": "/career"
+          },
+          {
+            "name": "Sustainability",
+            "link": "/sustainability"
+          }
+        ]
+      },
+      {
+        "name": "Projects",
+        "link": "/projects"
+      },
+      {
+        "name": "Activities",
+        "link": "/activities",
+        "submenu": [
+          {
+            "name": "Initial Planning",
+            "link": "/activities/673f419e92fdbd1e54d59db0"
+          },
+          {
+            "name": "Blueprint Creation",
+            "link": "/activities/673f41ab92fdbd1e54d59db6"
+          },
+          {
+            "name": "Development Work",
+            "link": "/activities/673f41b192fdbd1e54d59dbd"
+          },
+          {
+            "name": "Quality Assurance",
+            "link": "/activities/673f41b692fdbd1e54d59dc2"
+          },
+          {
+            "name": "Deployment",
+            "link": "/activities/673f41bb92fdbd1e54d59dc7"
+          },
+          {
+            "name": "Post-Launch Support",
+            "link": "/activities/673f41c092fdbd1e54d59dcc"
+          }
+        ]
+      },
+      {
+        "name": "Contact",
+        "link": "/contact"
+      },
+      {
+        "name": "News",
+        "link": "/news"
+      }
+    ]
+  },
+  "1": {
+    "page": "footer",
+    "id": "1",
+    "footerContactTitle": "CONTACT",
+    "footerContactButton": "CONTACT",
+    "footerFormTitle": "STAY IN TOUCH WITH US!",
+    "footerFormButton": "SUBMIT",
+    "footerPolicyPrivacy": "Privacy Policy",
+    "footerPolicyPrivacyLink": "/privacy-policy",
+    "footerPolicyDisclaimer": "Disclaimer",
+    "footerPolicyDisclaimerLink": "/disclaimer",
+    "footerPolicyTermsOfUse": "Terms of Use",
+    "footerPolicyTermsOfUseLink": "/terms-of-use",
+    "footerAllRights": "© 2024 M.S Construction PVT. LTD & Associates All Rights Reserved",
+    "footerDesignCredit": "Website designed and managed by",
+    "footerDesignLink": "https://innotechconsultant.in/",
+    "footerLogoImage": "/logoms.png",
+    "footerDesignLinkHeader": "AXIOMOS",
+    "footerContactButtonLink": "/contact",
+    "footerExploreHeader": "EXPLORE",
+    "footercontactNumber": "+91 8530236969",
+    "footercontactEmail": "info@msconstruction.co",
+    "footercontactAddress": "201, Crystal Empire, Near D-Mart, Baner, Pune 411045",
+    "footercontactAddressLink": "https://maps.app.goo.gl/CnPHYzRkd9RMreFe7"
+  },
+  "2": {
+    "page": "home",
+    "id": "2",
+    "NewsTitile": "Latest News test",
+    "NewsSentence": "Delve into the latest news and insights from Laing O'Rourke",
+    "NewsSentence2": "Our thinking, people and projects are shaping the future of construction",
+    "NewsButton": "See All News",
+    "ExperienceTitile": "Our experience",
+    "ExperienceSentence": "The Power of Experience",
+    "ExperienceSentence2": "Laing O’Rourke is an international engineering and construction company delivering state-of-the-art infrastructure and buildings projects for clients in the UK, Middle East, and Australia.",
+    "PresenceHeader": "We Goes the Extra Mile.",
+    "PresencePara": "M.S Constructions Engineering is well-positioned to offer engineering services to clients not only throughout the Southeast but across the country. No matter where your business is located, you can expect the same personal, one-of-a-kind experience that R.S Constructions always delivers.",
+    "PresenceButton": "VIEW OUT WORK",
+    "PresenceLink": "/projects",
+    "PresenceMapImage": "/india.svg"
+  },
+  "3": {
+    "page": "About",
+    "id": "3",
+    "Title": "About Us - Excellence in Civil & Structural Construction",
+    "Header": "At MS Enterprise, we take pride in delivering top-notch Civil Construction, Structural Fabrication, and Erection services to Government Enterprises and Undertakings since 1992. With decades of experience, we have built a strong reputation for quality, reliability, and efficiency in the industry.",
+    "CompanyProfile": "./data/profile.pdf",
+    "CompanyProfileHeader": "Download M.S Construction",
+    "Sentence": "We strive to expand our services and collaborate with organizations that value excellence in construction. We seek empanelment opportunities with reputed firms and government bodies to contribute our expertise, workforce, and innovation to prestigious projects.We eagerly look forward to the opportunity to work with your organization and bring value to your projects.",
+    "Image": "https://cdn.pixabay.com/photo/2018/09/25/23/40/cranes-3703469_1280.jpg",
+    "Points": [
+      {
+        "Point": "Over 30 years of industry expertise in civil construction & structural fabrication."
+      },
+      {
+        "Point": "Proven track record of working with Government Enterprises & Undertakings."
+      },
+      {
+        "Point": "Commitment to high-quality standards, safety, and timely project completion."
+      }
+    ],
+    "Sentence2": "Skilled professionals and cutting-edge technology for efficient project execution."
+  },
+  "4": {
+    "page": "project",
+    "id": "4",
+    "ProjectIntroTitle": "Our Projects",
+    "ProjectIntroSentence": "Find solutions to everyday challenges by extending the boundaries of design.",
+    "ProjectIntroPhoto": "/Projects/project1.jpg"
+  },
+  "5": {
+    "page": "media&news",
+    "id": "5",
+    "MediaIntroTitle": "Media & News",
+    "MediaIntroSentence": "Find solutions to everyday challenges by extending the boundaries of design.",
+    "MediaIntroPhoto": "/Projects/news.jpg"
+  },
+  "6": {
+    "page": "awards&recognition",
+    "id": "6",
+    "IntroTitle": "About",
+    "IntroName": "baba yaga",
+    "IntroDetails": "Eric Thomas, Ph.D., is a critically acclaimed author, World-renowned speaker, educator, pastor, and audible.com Audie Awards Finalist. As he is better known, ET has taken the world by storm with his creative, common-sense approach to living a successful, satisfying professional and personal life.",
+    "IntroPhoto": "/images/test.png"
+  },
+  "7": {
+    "page": "nriservices",
+    "id": "7",
+    "NRIIntroTitle": "NRI Services",
+    "NRIIntroSentence": "Find solutions to everyday challenges by extending the boundaries of design.",
+    "NRIIntroPhoto": "/Projects/nri.jpg",
+    "AboutUsTitle": "CAPABILITIES",
+    "AboutUsSentence": "Creating strategies for a sustainable future.",
+    "AboutUsCard": [
+      {
+        "title": "ARCHITECTURE",
+        "heading": "Sustainable Building Design",
+        "sentence": "Our focus is to design buildings of outstanding quality, suitable for their purpose and employing the best materials and construction techniques."
+      },
+      {
+        "title": "PLANNING",
+        "heading": "Site & Infrastructure Master-Plan",
+        "sentence": "The team at MAP Architects merge vision and strategy for plans that are sustainable and lead to productive growth."
+      },
+      {
+        "title": "DESIGN",
+        "heading": "Workplace Strategy & Design",
+        "sentence": "Our breadth of experience includes corporate commercial, institution, education, healthcare, & hospitality interiors. We use design as a lever to improve motivation, behavior, and performance."
+      },
+      {
+        "title": "CONSULTANCY",
+        "heading": "Strategic Advisory & Consulting",
+        "sentence": "Advisory on Sustainability Goals, Design and Engineering Analysis, Demographic Profiling, Catchment Analysis, Architectural Feasibility Studies, Pre-Concept Stage Design Brief."
+      }
+    ],
+    "faqs": [
+      {
+        "questions": "Can overseas buyers purchase office property in India?",
+        "answer": "Yes, overseas buyers can purchase office properties in India, subject to certain regulations."
+      },
+      {
+        "questions": "Do I need to be physically present in India to buy the property?",
+        "answer": "No, you can complete the transaction remotely through legal representatives or via a Power of Attorney."
+      },
+      {
+        "questions": "What are the legal requirements for overseas buyers?",
+        "answer": "Overseas buyers must comply with FEMA (Foreign Exchange Management Act) regulations and other local laws."
+      },
+      {
+        "questions": "Are there financing options available for overseas buyers?",
+        "answer": "Yes, financing options are available, but the terms depend on the buyer's eligibility and the lender's criteria."
+      },
+      {
+        "questions": "What are the property tax implications for overseas buyers?",
+        "answer": "Overseas buyers are subject to property taxes, and it is advisable to consult a tax expert for specific details."
+      },
+      {
+        "questions": "Can I lease or rent out the property after purchasing?",
+        "answer": "Yes, you can lease or rent out the office property, provided you comply with local regulations."
+      },
+      {
+        "questions": "What documents are required to buy office property in India?",
+        "answer": "The required documents include identity proof, proof of overseas residency, and financial details."
+      },
+      {
+        "questions": "How do I transfer funds for purchasing the property?",
+        "answer": "Funds can be transferred through banking channels that comply with FEMA regulations."
+      },
+      {
+        "questions": "Are there any restrictions on property resale for overseas buyers?",
+        "answer": "There are no specific restrictions, but buyers must comply with local tax laws and repatriation regulations."
+      },
+      {
+        "questions": "What is the process for property registration?",
+        "answer": "The property registration process involves signing legal documents, paying stamp duty, and registering with the local land registry office."
+      }
+    ],
+    "nriContent": {
+      "title": "Invest in a property with Solitaire and be rest assured.",
+      "content": [
+        "Proactive Assistance to Maximise Benefits and Returns",
+        "Lucrative Assets with World-class Lifestyle Options",
+        "Dedicated Customer Relation Personnel",
+        "Frequent Communication and Updates on Ongoing Projects",
+        "End-to-end Home Loan and Legal Assistance"
+      ]
+    }
+  },
+  "9": {
+    "page": "blog",
+    "id": "9",
+    "BlogIntroTitle": "Blogs",
+    "BlogIntroSentence": "Explore how creative design can push boundaries and offer practical solutions to daily challenges",
+    "BlogIntroPhoto": "/Projects/blog.webp"
+  },
+  "10": {
+    "page": "contact",
+    "id": "10",
+    "ContactIntroTitle": "Contact US",
+    "ContactIntroSentence": "Find solutions to everyday challenges by extending the boundaries of design.",
+    "ContactIntroPhoto": "/Projects/contact.webp",
+    "ContactContent": {
+      "title": "Invest in a property with Solitaire and be rest assured.",
+      "content": [
+        "Proactive Assistance to Maximise Benefits and Returns",
+        "Lucrative Assets with World-class Lifestyle Options",
+        "Dedicated Customer Relation Personnel",
+        "Frequent Communication and Updates on Ongoing Projects",
+        "End-to-end Home Loan and Legal Assistance"
+      ]
+    },
+    "ContactMap": [
+      {
+        "ContactOffice": "Head Office",
+        "ContactOfficeCity": "Pune",
+        "ContactOfficeAddress": "M.S Construction Pvt. Ltd,201, Crystal Empire, Baner Rd, near Westside, Laxman Nagar, Baner, Pune, Maharashtra 411045",
+        "ContactOfficeAddressLink": "https://maps.app.goo.gl/gXrwzAxniDmtqpA59",
+        "ContactOfficePhone": "Phone: +91 8530236969",
+        "ContactOfficeLat": "18.568056",
+        "ContactOfficeLong": "73.768493"
+      }
+    ]
+  },
+  "11": {
+    "page": "ProductPage",
+    "id": "11",
+    "IntroTitle": "About",
+    "IntroName": "baba yaga",
+    "IntroDetails": "Eric Thomas, Ph.D., is a critically acclaimed author, World-renowned speaker, educator, pastor, and audible.com Audie Awards Finalist. As he is better known, ET has taken the world by storm with his creative, common-sense approach to living a successful, satisfying professional and personal life.",
+    "IntroPhoto": "/images/test.png"
+  },
+  "12": {
+    "page": "BlogPage",
+    "id": "12",
+    "IntroTitle": "About",
+    "IntroName": "baba yaga",
+    "IntroDetails": "Eric Thomas, Ph.D., is a critically acclaimed author, World-renowned speaker, educator, pastor, and audible.com Audie Awards Finalist. As he is better known, ET has taken the world by storm with his creative, common-sense approach to living a successful, satisfying professional and personal life.",
+    "IntroPhoto": "/images/test.png"
+  },
+  "13": {
+    "page": "media&newsPage",
+    "id": "13",
+    "IntroTitle": "About",
+    "IntroName": "baba yaga",
+    "IntroDetails": "Eric Thomas, Ph.D., is a critically acclaimed author, World-renowned speaker, educator, pastor, and audible.com Audie Awards Finalist. As he is better known, ET has taken the world by storm with his creative, common-sense approach to living a successful, satisfying professional and personal life.",
+    "IntroPhoto": "/images/test.png"
+  },
+  "14": {
+    "page": "allCommon",
+    "id": "14",
+    "AllFollow": [
+      {
+        "AllFollowTitle": "Follow Us on Facebook",
+        "AllFollowIcon": "/images/logo/innotech.png",
+        "AllFollowColor": "#3b5998",
+        "AllFollowNumber": "25k Followers",
+        "AllFollowDetails": "Stay updated with our latest events and news.",
+        "AllFollowLink": "https://facebook.com/ourpage"
+      },
+      {
+        "AllFollowTitle": "Follow Us on Twitter",
+        "AllFollowIcon": "/images/logo/innotech.png",
+        "AllFollowColor": "#1DA1F2",
+        "AllFollowNumber": "18k Followers",
+        "AllFollowDetails": "Join the conversation with our community.",
+        "AllFollowLink": "https://twitter.com/ourpage"
+      },
+      {
+        "AllFollowTitle": "Follow Us on Instagram",
+        "AllFollowIcon": "/images/logo/innotech.png",
+        "AllFollowColor": "#E1306C",
+        "AllFollowNumber": "30k Followers",
+        "AllFollowDetails": "See the moments captured at our events.",
+        "AllFollowLink": "https://instagram.com/ourpage"
+      },
+      {
+        "AllFollowTitle": "Follow Us on LinkedIn",
+        "AllFollowIcon": "/images/logo/innotech.png",
+        "AllFollowColor": "#0077B5",
+        "AllFollowNumber": "12k Followers",
+        "AllFollowDetails": "Connect with us professionally.",
+        "AllFollowLink": "https://linkedin.com/company/ourpage"
+      },
+      {
+        "AllFollowTitle": "Follow Us on YouTube",
+        "AllFollowIcon": "/images/logo/innotech.png",
+        "AllFollowColor": "#FF0000",
+        "AllFollowNumber": "40k Subscribers",
+        "AllFollowDetails": "Watch our event highlights and more.",
+        "AllFollowLink": "https://youtube.com/ourchannel"
+      }
+    ],
+    "AllRegisterBlogPhoto": "/images/test.png",
+    "AllRegisterBlogTitle": "Register for Upcoming Events",
+    "AllRegisterBlogTitle2": "Don't miss out!",
+    "AllRegisterBlogButton": "Register Now",
+    "SpeakerTestimonials": [
+      {
+        "name": "John Doe",
+        "designation": "Event Organizer",
+        "testimonial": "The speaker was fantastic! Their talk was inspiring and well-received by everyone."
+      },
+      {
+        "name": "Jane Smith",
+        "designation": "Conference Coordinator",
+        "testimonial": "An excellent speaker who brought a lot of value to our event. Highly recommended!"
+      }
+    ],
+    "values": [
+      {
+        "title": "Excellence",
+        "sentence": "We strive for excellence in quality, and we continuously innovate, utilizing advanced technologies"
+      },
+      {
+        "title": "Teamwork",
+        "sentence": "We insist on mutual respect, cooperation and mutual encouragement to achieve each individual to its full potential."
+      },
+      {
+        "title": "Integrity",
+        "sentence": "We believe & act with reliability, honesty and fairness."
+      },
+      {
+        "title": "Commitment",
+        "sentence": "We are fully dedicated to delivering our objectives through the most efficient use of resources."
+      },
+      {
+        "title": "Sustainability",
+        "sentence": "We are fully dedicated to delivering our objectives through the most efficient use of resources."
+      },
+      {
+        "title": "Accountability",
+        "sentence": "We are fully dedicated to delivering our objectives through the most efficient use of resources."
+      }
+    ]
+  },
+  "15": {
+    "page": "career",
+    "id": "15",
+    "CareerIntroTitle": "Career At Avenue",
+    "CareerIntroSentence": "Find solutions to everyday challenges by extending the boundaries of design.",
+    "CareerIntroPhoto": "/Projects/career.webp",
+    "CareerHiring": [
+      {
+        "position": "Civil Engineer",
+        "Experience": "3-5 years",
+        "Openings": "3",
+        "Qualification": "Diploma/ B. Tech Civil (Degree with 3, Diploma with 5)",
+        "Location": "Mumbai, Maharashtra",
+        "details": "Responsible for planning and scheduling project timelines and milestones using appropriate tools."
+      },
+      {
+        "position": "Safety Officer",
+        "Experience": "2-3 years",
+        "Openings": "1",
+        "Qualification": "Diploma in Safety from a reputed institution",
+        "Location": "Mumbai, Maharashtra",
+        "details": "Ensure the implementation of safety protocols and regulations to maintain a safe work environment. Conduct regular safety audits and training sessions."
+      },
+      {
+        "position": "Mechanical Engineer",
+        "Experience": "2-5 years",
+        "Openings": "1",
+        "Qualification": "Diploma/ B. Tech Mechanical (Degree with 3, Diploma with 5)",
+        "Location": "Mumbai, Maharashtra",
+        "details": "Oversee the planning, implementation, and tracking of a specific short-term project which has a beginning, an end, and specified deliverables. Ensure mechanical systems and machinery run smoothly and efficiently."
+      }
+    ]
+  },
+  "16": {
+    "page": "project",
+    "id": "16",
+    "ProjectIntroTitle": "Our Projects",
+    "ProjectIntroSentence": "Find solutions to everyday challenges by extending the boundaries of design.",
+    "ProjectIntroPhoto": "/Projects/project1.jpg"
+  },
+  "17": {
+    "page": "project",
+    "id": "17",
+    "ProjectIntroTitle": "Our Projects",
+    "ProjectIntroSentence": "Find solutions to everyday challenges by extending the boundaries of design.",
+    "ProjectIntroPhoto": "/Projects/project1.jpg"
+  },
+  "18": {
+    "page": "project",
+    "id": "18",
+    "ProjectIntroTitle": "Our Projects",
+    "ProjectIntroSentence": "Find solutions to everyday challenges by extending the boundaries of design.",
+    "ProjectIntroPhoto": "/Projects/project1.jpg"
+  },
+  "19": {
+    "page": "Admin",
+    "id": "19",
+    "AdminlogoClient": "/logoms.png",
+    "AdminlogoCompany": "/logoms.png",
+    "AdminHeaderTitle": "shahbad enterprises",
+    "AdminProjectsEdit": "adminprojects",
+    "adminModules": [
+      {
+        "title": "Projects",
+        "description": "Oversee and manage all ongoing and completed projects.",
+        "path": "/admin/projects",
+        "icon": "fa-project-diagram"
+      },
+      {
+        "title": "Activities",
+        "description": "Manage and organize the activities catalog effectively.",
+        "path": "/admin/activities",
+        "icon": "fa-box-open"
+      },
+      {
+        "title": "News",
+        "description": "Create, update, and publish the latest news and announcements.",
+        "path": "/admin/news",
+        "icon": "fa-newspaper"
+      },
+      {
+        "title": "Hiring",
+        "description": "Streamline and manage recruitment and job postings.",
+        "path": "/admin/hiring",
+        "icon": "fa-users"
+      },
+      {
+        "title": "Submission",
+        "description": "Review and manage user-submitted forms and content.",
+        "path": "/admin/submission",
+        "icon": "fa-file-alt"
+      },
+      {
+        "title": "File Management",
+        "description": "Upload, organize, and access important files.",
+        "path": "/admin/files",
+        "icon": "fa-folder-open"
+      },
+      {
+        "title": "Site Editor",
+        "description": "Easily manage and edit website content and layouts.",
+        "path": "/admin/editor",
+        "icon": "fa-edit"
+      },
+      {
+        "title": "Dev Feedback",
+        "description": "Submit and review feedback for ongoing development projects.",
+        "path": "/admin/feedback",
+        "icon": "fa-comments"
+      }
+    ],
+    "AdminHeaderName": "Project",
+    "AdminProjects": [
+      {
+        "fields": "title"
+      },
+      {
+        "fields": "id"
+      },
+      {
+        "fields": "services",
+        "api": "https://msconstruction.vercel.app/activities",
+        "CallingField": "_id"
+      },
+      {
+        "fields": "client"
+      },
+      {
+        "fields": "location"
+      },
+      {
+        "fields": "details"
+      },
+      {
+        "fields": "projectsname"
+      },
+      {
+        "fields": "latitude"
+      },
+      {
+        "fields": "longitude"
+      },
+      {
+        "fields": "photo",
+        "subfields": [
+          {
+            "fields": "url",
+            "upload": "https://msconstruction.vercel.app/image/image"
+          }
+        ]
+      },
+      {
+        "fields": "keypoints",
+        "subfields": [
+          {
+            "fields": "points"
+          }
+        ]
+      },
+      {
+        "fields": "stats",
+        "subfields": [
+          {
+            "fields": "icon"
+          },
+          {
+            "fields": "points"
+          },
+          {
+            "fields": "number"
+          }
+        ]
+      }
+    ],
+    "AdminActivitiesApi": "https://pranusha.vercel.app/activities",
+    "AdminActivities": [
+      {
+        "fields": "name"
+      },
+      {
+        "fields": "title"
+      },
+      {
+        "fields": "details"
+      },
+      {
+        "fields": "photo",
+        "subfields": [
+          {
+            "fields": "url"
+          }
+        ]
+      },
+      {
+        "fields": "Points",
+        "subfields": [
+          {
+            "fields": "Point"
+          }
+        ]
+      },
+      {
+        "fields": "Header"
+      },
+      {
+        "fields": "ContentPhoto"
+      },
+      {
+        "fields": "Sentence"
+      },
+      {
+        "fields": "Sentence2"
+      },
+      {
+        "fields": "Video"
+      }
+    ],
+    "AdminNews": [
+      {
+        "fields": "id"
+      },
+      {
+        "fields": "photo"
+      },
+      {
+        "fields": "title"
+      },
+      {
+        "fields": "date"
+      },
+      {
+        "fields": "details"
+      },
+      {
+        "fields": "button"
+      },
+      {
+        "fields": "content"
+      }
+    ],
+    "AdminHiring": [
+      {
+        "fields": "position"
+      },
+      {
+        "fields": "Experience"
+      },
+      {
+        "fields": "Openings"
+      },
+      {
+        "fields": "Location"
+      },
+      {
+        "fields": "details"
+      }
+    ],
+    "AdminSubmission": [
+      {
+        "fields": "name"
+      },
+      {
+        "fields": "email"
+      },
+      {
+        "fields": "site"
+      },
+      {
+        "fields": "createdAt"
+      },
+      {
+        "fields": "phone"
+      },
+      {
+        "fields": "country"
+      },
+      {
+        "fields": "countryCode"
+      },
+      {
+        "fields": "message"
+      }
+    ]
+  },
+  "20": {
+    "page": "Values",
+    "id": "20",
+    "Title": "Our Purpose and values",
+    "Image": "https://cdn.pixabay.com/photo/2021/08/02/20/35/architecture-6517841_1280.jpg",
+    "Header": "Our story is one of energy, passion, ambition, people and teamwork. We harness the power of our experience, stretching back over a century and a half to deliver certainty for our clients.",
+    "Sentence": "Laing O’Rourke was formed in 2001, bringing together the experience of the construction arm of John Laing Plc, whose origins stretched back to 1848, and R O’Rourke & Son, a regionally based formwork and concrete specialist founded in 1978. The new business has grown and become a renowned international engineering and construction company.\n\nIn the two decades since it was founded, Laing O'Rourke has expanded into new markets and strengthened its project delivery capabilities; pioneering modern methods of construction, adopting purposeful technologies, delivering certainty for clients, and constructing some of the most iconic projects in the world.\n\nOur purpose—to push the boundaries of what's possible in service of humanity—together with our values of care, integrity, and courage, are what make us unique in who we are and drive the impact we want to have as a business in the world. At our core is the ambition to be a force of positive change in our industry.\n\nOur strong culture stems from our family ownership and a passion to deliver projects that improve the lives of the communities they serve.\n\nOur Origin Story, told by our own people, connects the threads of our past to the ambitions of our future and shows that our purpose and values matter now more than ever. They provide our reference point to test our decision-making and actions, and they inspire us, as they always have, to find better and new ways to deliver.",
+    "Points": [
+      {
+        "Point": "Offsite manufacturing – we have invested £200M to create the Laing O’Rourke Centre of Excellence for Modern Construction in Nottinghamshire. This is the most advanced concrete products manufacturing facility in Europe and has produced precision components for more than 350 UK buildings and infrastructure projects. In the future, it will produce lower carbon products for more of our projects."
+      },
+      {
+        "Point": "Digital engineering – thanks to our digital engineers, we build every project twice – virtually and then physically. This allows us to de-risk both the design and construction phases of projects, and once we are on site our digital work packs link models to construction activity to improve productivity."
+      },
+      {
+        "Point": "Direct delivery – unlike our competitors in the UK we have an integrated supply chain. This gives us greater visibility of costs, maximises integration across disciplines and minimises risk through the delivery process. We retain the knowledge learned on a project and use it to deliver certainty for our next client."
+      }
+    ],
+    "Sentence2": "With years of experience and a team of dedicated professionals, we continue to set new benchmarks in the construction industry.",
+    "Video": "https://www.youtube.com/watch?v=kzLLm5M5sFM&ab_channel=carversal",
+    "values": [
+      {
+        "title": "Excellence",
+        "sentence": "We strive for excellence in quality, and we continuously innovate, utilizing advanced technologies"
+      },
+      {
+        "title": "Teamwork",
+        "sentence": "We insist on mutual respect, cooperation and mutual encouragement to achieve each individual to its full potential."
+      },
+      {
+        "title": "Integrity",
+        "sentence": "We believe & act with reliability, honesty and fairness."
+      },
+      {
+        "title": "Commitment",
+        "sentence": "We are fully dedicated to delivering our objectives through the most efficient use of resources."
+      },
+      {
+        "title": "Sustainability",
+        "sentence": "We are fully dedicated to delivering our objectives through the most efficient use of resources."
+      },
+      {
+        "title": "Accountability",
+        "sentence": "We are fully dedicated to delivering our objectives through the most efficient use of resources."
+      }
+    ]
+  },
+  "21": {
+    "page": "Sustainability",
+    "id": "21",
+    "Title": "Sustainability",
+    "Image": "https://cdn.pixabay.com/photo/2016/02/01/21/15/excavator-1174428_1280.jpg",
+    "Header": "Our story is one of energy, passion, ambition, people and teamwork. We harness the power of our experience, stretching back over a century and a half to deliver certainty for our clients.",
+    "Sentence": "Laing O’Rourke was formed in 2001, bringing together the experience of the construction arm of John Laing Plc, whose origins stretched back to 1848, and R O’Rourke & Son, a regionally based formwork and concrete specialist founded in 1978. The new business has grown and become a renowned international engineering and construction company.\n\nIn the two decades since it was founded, Laing O'Rourke has expanded into new markets and strengthened its project delivery capabilities; pioneering modern methods of construction, adopting purposeful technologies, delivering certainty for clients, and constructing some of the most iconic projects in the world.\n\nOur purpose—to push the boundaries of what's possible in service of humanity—together with our values of care, integrity, and courage, are what make us unique in who we are and drive the impact we want to have as a business in the world. At our core is the ambition to be a force of positive change in our industry.\n\nOur strong culture stems from our family ownership and a passion to deliver projects that improve the lives of the communities they serve.\n\nOur Origin Story, told by our own people, connects the threads of our past to the ambitions of our future and shows that our purpose and values matter now more than ever. They provide our reference point to test our decision-making and actions, and they inspire us, as they always have, to find better and new ways to deliver.",
+    "Points": [
+      {
+        "Point": "Offsite manufacturing – we have invested £200M to create the Laing O’Rourke Centre of Excellence for Modern Construction in Nottinghamshire. This is the most advanced concrete products manufacturing facility in Europe and has produced precision components for more than 350 UK buildings and infrastructure projects. In the future, it will produce lower carbon products for more of our projects."
+      },
+      {
+        "Point": "Digital engineering – thanks to our digital engineers, we build every project twice – virtually and then physically. This allows us to de-risk both the design and construction phases of projects, and once we are on site our digital work packs link models to construction activity to improve productivity."
+      },
+      {
+        "Point": "Direct delivery – unlike our competitors in the UK we have an integrated supply chain. This gives us greater visibility of costs, maximises integration across disciplines and minimises risk through the delivery process. We retain the knowledge learned on a project and use it to deliver certainty for our next client."
+      }
+    ],
+    "Sentence2": "With years of experience and a team of dedicated professionals, we continue to set new benchmarks in the construction industry.",
+    "Video": "https://www.youtube.com/watch?v=kzLLm5M5sFM&ab_channel=carversal"
+  },
+  "22": {
+    "page": "News",
+    "id": "22",
+    "Title": "Latest News",
+    "Image": "https://cdn.pixabay.com/photo/2016/11/24/20/30/floor-plan-1857175_1280.jpg"
+  },
+  "23": {
+    "page": "Leadership",
+    "id": "23",
+    "Title": "Leadership",
+    "Image": "https://cdn.pixabay.com/photo/2012/07/06/20/23/excavator-51665_1280.jpg",
+    "Team": [
+      {
+        "Name": "Rahul Sharma",
+        "Post": "Project Manager",
+        "Photo": "https://www.laingorourke.com/media/23xhile0/sir-john-parker.png?width=376&height=343&rnd=133370939285570000",
+        "Sentence": "Rahul ensures every project is executed with precision and efficiency."
+      },
+      {
+        "Name": "Priya Desai",
+        "Post": "Lead Architect",
+        "Photo": "https://www.laingorourke.com/media/fnkbrquc/ray-o-rourke.png?width=376&height=343&rnd=133370939276470000",
+        "Sentence": "Priya's designs blend functionality with stunning aesthetics."
+      },
+      {
+        "Name": "Amit Patel",
+        "Post": "Civil Engineer",
+        "Photo": "https://www.laingorourke.com/media/lmegi1em/cathal-o-rourke.png?width=376&height=343&rnd=133370939204070000",
+        "Sentence": "Amit brings structural integrity to every construction."
+      },
+      {
+        "Name": "Sneha Roy",
+        "Post": "Interior Designer",
+        "Photo": "https://www.laingorourke.com/media/d5gpzt13/artboard-9.jpg?width=376&height=343&rnd=133681228718800000",
+        "Sentence": "Sneha's creativity transforms spaces into experiences."
+      },
+      {
+        "Name": "Karan Singh",
+        "Post": "Marketing Head",
+        "Photo": "https://www.laingorourke.com/media/3j3bx2r4/jim-edmondson_grey-dotcom.jpg?width=376&height=343&rnd=133370939233600000",
+        "Sentence": "Karan ensures our projects reach the right audience with impact."
+      },
+      {
+        "Name": "Anjali Mehta",
+        "Post": "Financial Analyst",
+        "Photo": "https://www.laingorourke.com/media/bdrbsrly/artboard-8.jpg?width=376&height=343&rnd=133681230019700000",
+        "Sentence": "Anjali's insights keep our budgets balanced and efficient."
+      },
+      {
+        "Name": "Rohit Verma",
+        "Post": "Operations Manager",
+        "Photo": "https://www.laingorourke.com/media/rb1fv0kl/tp-sillem.jpg?width=376&height=343&rnd=133370939292700000",
+        "Sentence": "Rohit ensures seamless coordination across all departments."
+      }
+    ]
+  },
+  "24": {
+    "page": "Health",
+    "id": "24",
+    "Title": "Health & Safety",
+    "Image": "https://cdn.pixabay.com/photo/2023/11/20/12/05/crane-8400990_960_720.jpg",
+    "Header": "Our story is one of energy, passion, ambition, people and teamwork. We harness the power of our experience, stretching back over a century and a half to deliver certainty for our clients.",
+    "Sentence": "Laing O’Rourke was formed in 2001, bringing together the experience of the construction arm of John Laing Plc, whose origins stretched back to 1848, and R O’Rourke & Son, a regionally based formwork and concrete specialist founded in 1978. The new business has grown and become a renowned international engineering and construction company.\n\nIn the two decades since it was founded, Laing O'Rourke has expanded into new markets and strengthened its project delivery capabilities; pioneering modern methods of construction, adopting purposeful technologies, delivering certainty for clients, and constructing some of the most iconic projects in the world.\n\nOur purpose—to push the boundaries of what's possible in service of humanity—together with our values of care, integrity, and courage, are what make us unique in who we are and drive the impact we want to have as a business in the world. At our core is the ambition to be a force of positive change in our industry.\n\nOur strong culture stems from our family ownership and a passion to deliver projects that improve the lives of the communities they serve.\n\nOur Origin Story, told by our own people, connects the threads of our past to the ambitions of our future and shows that our purpose and values matter now more than ever. They provide our reference point to test our decision-making and actions, and they inspire us, as they always have, to find better and new ways to deliver.",
+    "ContentPhoto": "/test.jpg",
+    "Points": [
+      {
+        "Point": "Offsite manufacturing – we have invested £200M to create the Laing O’Rourke Centre of Excellence for Modern Construction in Nottinghamshire. This is the most advanced concrete products manufacturing facility in Europe and has produced precision components for more than 350 UK buildings and infrastructure projects. In the future, it will produce lower carbon products for more of our projects."
+      },
+      {
+        "Point": "Digital engineering – thanks to our digital engineers, we build every project twice – virtually and then physically. This allows us to de-risk both the design and construction phases of projects, and once we are on site our digital work packs link models to construction activity to improve productivity."
+      },
+      {
+        "Point": "Direct delivery – unlike our competitors in the UK we have an integrated supply chain. This gives us greater visibility of costs, maximises integration across disciplines and minimises risk through the delivery process. We retain the knowledge learned on a project and use it to deliver certainty for our next client."
+      }
+    ],
+    "Sentence2": "With years of experience and a team of dedicated professionals, we continue to set new benchmarks in the construction industry.",
+    "Video": "video.mp4",
+    "cards": [
+      {
+        "title": "Engineered safety",
+        "details": "Engineered safety is about engineering out risk and engineering in health at every stage of the project lifecycle. This is achieved through working closely with our design consultants and employing a modern methods of construction approach.",
+        "photo": "https://www.laingorourke.com/media/vidfhvqf/engineered-safety.png?width=466&height=309&rnd=133446224292200000"
+      },
+      {
+        "title": "Delivery excellence",
+        "details": "Delivery excellence ensures a robust implementation of our leading standards and H&S management system, where we will champion consistent engagement with our workforce. This is underpinned by clear lines of operational accountability and competence.",
+        "photo": "https://www.laingorourke.com/media/s2ldmlfp/delivery-excellence.png?width=466&height=309&rnd=133446230077130000"
+      },
+      {
+        "title": "Human performance",
+        "details": "Human performance is how we enable our people. We will create a working environment that supports people's holistic health, enabling them to sustain high performance by managing their personal energy and capacity levels.",
+        "photo": "https://www.laingorourke.com/media/fxedn3rh/human-performance.png?width=466&height=309&rnd=133446227680000000"
+      }
+    ]
+  },
+  "25": {
+    "page": "Career",
+    "id": "25",
+    "Title": "Career",
+    "Image": "https://cdn.pixabay.com/photo/2017/04/02/09/08/bulldozer-2195329_1280.jpg",
+    "Header": "Our story is one of energy, passion, ambition, people and teamwork. We harness the power of our experience, stretching back over a century and a half to deliver certainty for our clients.",
+    "Sentence": "Laing O’Rourke was formed in 2001, bringing together the experience of the construction arm of John Laing Plc, whose origins stretched back to 1848, and R O’Rourke & Son, a regionally based formwork and concrete specialist founded in 1978. The new business has grown and become a renowned international engineering and construction company.\n\nIn the two decades since it was founded, Laing O'Rourke has expanded into new markets and strengthened its project delivery capabilities; pioneering modern methods of construction, adopting purposeful technologies, delivering certainty for clients, and constructing some of the most iconic projects in the world.\n\nOur purpose—to push the boundaries of what's possible in service of humanity—together with our values of care, integrity, and courage, are what make us unique in who we are and drive the impact we want to have as a business in the world. At our core is the ambition to be a force of positive change in our industry.\n\nOur strong culture stems from our family ownership and a passion to deliver projects that improve the lives of the communities they serve.\n\nOur Origin Story, told by our own people, connects the threads of our past to the ambitions of our future and shows that our purpose and values matter now more than ever. They provide our reference point to test our decision-making and actions, and they inspire us, as they always have, to find better and new ways to deliver.",
+    "Points": [
+      {
+        "Point": "Offsite manufacturing – we have invested £200M to create the Laing O’Rourke Centre of Excellence for Modern Construction in Nottinghamshire. This is the most advanced concrete products manufacturing facility in Europe and has produced precision components for more than 350 UK buildings and infrastructure projects. In the future, it will produce lower carbon products for more of our projects."
+      },
+      {
+        "Point": "Digital engineering – thanks to our digital engineers, we build every project twice – virtually and then physically. This allows us to de-risk both the design and construction phases of projects, and once we are on site our digital work packs link models to construction activity to improve productivity."
+      },
+      {
+        "Point": "Direct delivery – unlike our competitors in the UK we have an integrated supply chain. This gives us greater visibility of costs, maximises integration across disciplines and minimises risk through the delivery process. We retain the knowledge learned on a project and use it to deliver certainty for our next client."
+      }
+    ],
+    "Sentence2": "With years of experience and a team of dedicated professionals, we continue to set new benchmarks in the construction industry.",
+    "Video": "https://www.youtube.com/watch?v=kzLLm5M5sFM&ab_channel=carversal"
+  },
+  "26": {
+    "page": "Contact",
+    "id": "26",
+    "Title": "Contact",
+    "Image": "https://cdn.pixabay.com/photo/2015/06/24/14/07/interior-820107_1280.jpg",
+    "ContactContent": {
+      "title": "Invest in a property with Solitaire and be rest assured.",
+      "content": [
+        "Proactive Assistance to Maximise Benefits and Returns",
+        "Lucrative Assets with World-class Lifestyle Options",
+        "Dedicated Customer Relation Personnel",
+        "Frequent Communication and Updates on Ongoing Projects",
+        "End-to-end Home Loan and Legal Assistance"
+      ]
+    },
+    "ContactMap": [
+      {
+        "ContactOffice": "Head Office",
+        "ContactOfficeCity": "Pune",
+        "ContactOfficeAddress": "M.S Construction Pvt. Ltd,dohtipur,P.O- Tildanga, P.S - Farakka, Dist - Murshidabad, Pin - 742212",
+        "ContactOfficeAddressLink": "https://maps.app.goo.gl/gXrwzAxniDmtqpA59",
+        "ContactOfficePhone": "Phone: +91 9434108851/8158063733",
+        "ContactOfficeLat": "18.568056",
+        "ContactOfficeLong": "73.768493"
+      }
+    ]
+  },
+  "27": {
+    "page": "Deliver",
+    "id": "27",
+    "Title": "Delivers",
+    "Image": "https://cdn.pixabay.com/photo/2016/10/12/23/23/mining-excavator-1736293_960_720.jpg",
+    "Header": "Our story is one of energy, passion, ambition, people and teamwork. We harness the power of our experience, stretching back over a century and a half to deliver certainty for our clients.",
+    "Sentence": "Laing O’Rourke was formed in 2001, bringing together the experience of the construction arm of John Laing Plc, whose origins stretched back to 1848, and R O’Rourke & Son, a regionally based formwork and concrete specialist founded in 1978. The new business has grown and become a renowned international engineering and construction company.\n\nIn the two decades since it was founded, Laing O'Rourke has expanded into new markets and strengthened its project delivery capabilities; pioneering modern methods of construction, adopting purposeful technologies, delivering certainty for clients, and constructing some of the most iconic projects in the world.\n\nOur purpose—to push the boundaries of what's possible in service of humanity—together with our values of care, integrity, and courage, are what make us unique in who we are and drive the impact we want to have as a business in the world. At our core is the ambition to be a force of positive change in our industry.\n\nOur strong culture stems from our family ownership and a passion to deliver projects that improve the lives of the communities they serve.\n\nOur Origin Story, told by our own people, connects the threads of our past to the ambitions of our future and shows that our purpose and values matter now more than ever. They provide our reference point to test our decision-making and actions, and they inspire us, as they always have, to find better and new ways to deliver.",
+    "Points": [
+      {
+        "Point": "Offsite manufacturing – we have invested £200M to create the Laing O’Rourke Centre of Excellence for Modern Construction in Nottinghamshire. This is the most advanced concrete products manufacturing facility in Europe and has produced precision components for more than 350 UK buildings and infrastructure projects. In the future, it will produce lower carbon products for more of our projects."
+      },
+      {
+        "Point": "Digital engineering – thanks to our digital engineers, we build every project twice – virtually and then physically. This allows us to de-risk both the design and construction phases of projects, and once we are on site our digital work packs link models to construction activity to improve productivity."
+      },
+      {
+        "Point": "Direct delivery – unlike our competitors in the UK we have an integrated supply chain. This gives us greater visibility of costs, maximises integration across disciplines and minimises risk through the delivery process. We retain the knowledge learned on a project and use it to deliver certainty for our next client."
+      }
+    ],
+    "Sentence2": "With years of experience and a team of dedicated professionals, we continue to set new benchmarks in the construction industry.",
+    "Video": "https://www.youtube.com/watch?v=kzLLm5M5sFM&ab_channel=carversal"
+  },
+  "28": {
+    "page": "Activites",
+    "id": "28",
+    "Title": "Our businesses",
+    "Image": "https://cdn.pixabay.com/photo/2015/12/06/18/02/architecture-1079806_1280.jpg",
+    "Header": "We are different to our competitors.",
+    "Sentence": "We have our own in-house supply chain comprising specialist business which also work independently for other companies. When we mobilise our fully integrated delivery team we work together to de-risk projects with clients, integrate design and manufacturing with logistics and accelerate construction on site. This reduces the risks associated with a traditional, fragmented approach to construction delivery and provides greater certainty to our clients.",
+    "Points": [
+      {
+        "Point": "Offsite manufacturing – we have invested £200M to create the Laing O’Rourke Centre of Excellence for Modern Construction in Nottinghamshire. This is the most advanced concrete products manufacturing facility in Europe and has produced precision components for more than 350 UK buildings and infrastructure projects. In the future, it will produce lower carbon products for more of our projects."
+      },
+      {
+        "Point": "Digital engineering – thanks to our digital engineers, we build every project twice – virtually and then physically. This allows us to de-risk both the design and construction phases of projects, and once we are on site our digital work packs link models to construction activity to improve productivity."
+      },
+      {
+        "Point": "Direct delivery – unlike our competitors in the UK we have an integrated supply chain. This gives us greater visibility of costs, maximises integration across disciplines and minimises risk through the delivery process. We retain the knowledge learned on a project and use it to deliver certainty for our next client."
+      }
+    ],
+    "cards": [
+      {
+        "title": "Engineered safety",
+        "details": "Engineered safety is about engineering out risk and engineering in health at every stage of the project lifecycle. This is achieved through working closely with our design consultants and employing a modern methods of construction approach.",
+        "photo": "https://www.laingorourke.com/media/vidfhvqf/engineered-safety.png?width=466&height=309&rnd=133446224292200000"
+      },
+      {
+        "title": "Delivery excellence",
+        "details": "Delivery excellence ensures a robust implementation of our leading standards and H&S management system, where we will champion consistent engagement with our workforce. This is underpinned by clear lines of operational accountability and competence.",
+        "photo": "https://www.laingorourke.com/media/s2ldmlfp/delivery-excellence.png?width=466&height=309&rnd=133446230077130000"
+      },
+      {
+        "title": "Human performance",
+        "details": "Human performance is how we enable our people. We will create a working environment that supports people's holistic health, enabling them to sustain high performance by managing their personal energy and capacity levels.",
+        "photo": "https://www.laingorourke.com/media/fxedn3rh/human-performance.png?width=466&height=309&rnd=133446227680000000"
+      }
+    ]
+  }
+}

@@ -1,0 +1,108 @@
+/* 
+.carousel-container {
+  width: 600px;
+   margin-top: 30px;
+   margin-left: 400px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.slide img {
+   
+ width: 100px;
+ height: 100px;
+ border-radius: 50%;
+}
+
+.slide p {
+  margin: 10px 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.slide h2 {
+  margin-top: 5px;
+  font-size: 20px;
+  color: #222;
+}
+
+.indicators {
+  margin-top: 10px;
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background-color: lightgray;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: orange;
+}  */
+
+
+
+/* AllCompanyCarousel.css */
+
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+  font-family: sans-serif;
+} */
+
+/* Carousel Styling */
+.carousel-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.slide img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.slide p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.slide h2 {
+  margin-top: 5px;
+  font-size: 20px;
+  color: #222;
+}
+
+.indicators {
+  margin-top: 10px;
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background-color: lightgray;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: orange;
+}

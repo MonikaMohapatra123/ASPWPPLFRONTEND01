@@ -1,0 +1,398 @@
+{
+  "0": {
+    "page": "navbar",
+    "id": "0",
+    "logo": "/logo.png",
+    "menu": [
+      {
+        "name": "Home",
+        "link": "/"
+      },
+      {
+        "name": "About US",
+        "link": "/about"
+       
+      },
+      { "name": "Projects", 
+      "link": "/projects" ,
+
+     "submenu": [
+          { "name": "PROJECT-1", "link": "/project-1" },
+          { "name": "PROJECT-2", "link": "/project-2" },
+          { "name": "PROJECT-3", "link": "/project-3" }
+        ]
+
+
+
+    },
+      {
+        "name": "Services",
+        "link": "/services",
+
+        "submenu": [
+          { "name": "Services-1", "link": "/service-1" },
+          { "name": "Services-2", "link": "/service-2" },
+          { "name": "Services-3", "link": "/service-3" }
+        ]
+      },
+      { "name": "Contact", "link": "/contact" }
+    ]
+  },
+  "1": {
+    "page": "heroSection",
+    "id": "1",
+    "slides": [
+      {
+        "image": "project-1.jpg",
+        "texts": [
+          "Bridge Building",
+          "Expertise in structural design.",
+          "Safe, durable, and sustainable outcomes."
+        ]
+      },
+      {
+        "image": "project-2.jpg",
+        "texts": [
+          "Grate Infrastructure",
+          "Product Division",
+          "Reliable workforce and machinery."
+        ]
+      },
+      {
+        "image": "project-3.jpg",
+        "texts": [
+          "Nuclear Power",
+          "Nuclear Division.",
+          "Experience across multiple states in India."
+        ]
+      }
+    ]
+  },
+  "2": {
+    "page": "companyIntro",
+    "id": "2",
+    "title": "Company Introduction",
+    "established": "Established in 1992",
+    "companyName": "Fabtech Projects and Engineers Ltd. (FPEL)",
+    "description": "Established in 1992 and headquartered in the city of Baner, Pune, Fabtech Projects and Engineers Ltd. (FPEL) stands as a testament to engineering excellence and innovation. With profound expertise in LSTK & EPCC projects, FPEL has etched a strong presence across the Up-Stream (Onshore), Mid-Stream, and Down Stream Sectors.",
+    "image": "project-6.jpg",
+    "buttonText": "READ OUR STORY"
+  },
+  "3": {
+    "page": "allCompanyProject",
+    "id": "3",
+    "title": "EXPERIENCE AND EXPERTISE ENGINEERING TEAM",
+    "heading": "EPCC PROJECT",
+    "services": [
+      "Hydrocarbon",
+      "Greentech / Carbon Capture",
+      "Fertilizers & Chemicals",
+      "Nuclear",
+      "Minerals & Mining",
+      "Heavy Engineering & Fabrication"
+    ],
+    "buttonText": "CHECK ALL PROJECTS",
+    "image": "project-3.jpg"
+  },
+  "4": {
+    "page": "allCompanyProduct",
+    "id": "4",
+    "title": "PRODUCT DIVISION",
+    "topLabel": "APPROVED BY ENGINEERING CONSULTANTS & VARIOUS REPUTED CUSTOMERS",
+    "heading": "PRODUCT DIVISION",
+    "highlight": "PRODUCT",
+    "description": "Fabtech group has five manufacturing units in Pune with advanced manufacturing facilities for manufacturing of heavy pressure vessels, heat exchangers, columns, reactors, etc. in carbon steel, stainless steel, alloy steel & other exotic materials.",
+    "image": "project-5.jpg",
+    "buttonText": "CHECK ALL PRODUCTS",
+    "buttonArrow": "→",
+    "sliderComponent": "ImageSlider"
+  },
+  "5": {
+    "page": "allCompanyNuclear",
+    "id": "5",
+    "title": "EXPERIENCE AND EXPERTISE ENGINEERING TEAM",
+    "heading": "NUCLEAR DIVISION",
+    "highlight": "NUCLEAR",
+    "description": "These credentials have equipped to provide design and detailed engineering services, including structural, mechanical, electrical, instrumentation, piping and automation for all phases of our assignments.",
+    "buttonText": "CHECK ALL PROJECTS",
+    "buttonArrow": "→",
+    "image": "project-4.jpg"
+  },
+  "6": {
+    "page": "allCompanyCarousel",
+    "id": "6",
+    "slides": [
+      {
+        "image": "project-2.jpg",
+        "paragraph": "project-2 hhdbnfhgfgyfbnfhuhf hese credentials have equipped to provide design and detailed engineering services, including structural, mechanical, electrical, instrum",
+        "heading": "Nuclear Division"
+      },
+      {
+        "image": "project-3.jpg",
+        "paragraph": "Tproject-3. dbhvygcnbfbhfh hese credentials have equipped to provide design and detailed engineering services, including structural, mechanical, electrical, instrum",
+        "heading": "Division Sustanibility"
+      },
+      {
+        "image": "project-4.jpg",
+        "paragraph": "project-4 dbhcyvcu hese credentials have equipped to provide design and detailed engineering services, including structural, mechanical, electrical, instrumdjdkid",
+        "heading": "Substace bagddu"
+      }
+    ]
+  },
+  "7": {
+  "page": "footer",
+  "id": "7",
+  "quickLinks": [
+    "Company Introduction",
+    "Milestones",
+    "Manufacturing Facility",
+    "Board of Directors"
+  ],
+  "epcc": [
+    "Minerals and Mining",
+    "Fertilizers & Chemicals",
+    "Nuclear"
+  ],
+  "products": [
+    "Pressure Vessels",
+    "Heat Exchanger",
+    "Columns",
+    "Reactors"
+  ],
+  "corporateOffice": {
+    "addressLines": [
+      "Level 7, M-agile, Near",
+      "Pan Card Club Road,",
+      "Baner, Pune – 411 045,",
+      "Maharashtra, India"
+    ],
+    "phone": "+91 8956770907",
+    "email": "info@fabtechprojects.com"
+  },
+  "socialIcons": [
+    "fa-facebook-f",
+    "fa-twitter",
+    "fa-youtube",
+    "fa-linkedin-in"
+  ]
+},
+ "8": {
+    "page": "aboutus",
+    "id": "8",
+    "subtitle": "ABOUT OUR",
+    "title": "Fabtech Projects and  Engineers Ltd. (FPEL)",
+    "description": "Established in 1992 and headquartered in the city of Baner, Pune, <strong>Fabtech Projects and Engineers Ltd. (FPEL)</strong> – A <strong>Dineshchandra Group</strong> of Company stands as a testament to engineering excellence and innovation. With a profound expertise in LSTK & EPCC projects, FPEL has etched a strong presence across the Up-Stream (Onshore), Mid-Stream, and Down Stream Sectors...",
+    "image": "project-5.jpg"
+  },
+   "9": {
+    "subtitle": "FABTECH",
+    "title": "Our",
+    "highlight": "Vision",
+    "description": "At Fabtech, we envision pioneering the global frontier of engineering, procurement and construction. Through our unwavering commitment to innovation, excellence, and sustainability, we aim to foster a world empowered by reliable and environmentally responsible infrastructure. Our goal is to continually elevate our service offerings, reinforcing our position as a trusted industry leader, while contributing positively to the global communities we serve, all within a framework of integrity and enduring stakeholder relationships.",
+    "image": "project-1.jpg"
+  },
+   "10": {
+    "subtitle": "FABTECH",
+    "title": "Our",
+    "highlight": "Mission",
+    "description": "At Fabtech, we envision pioneering the global frontier of engineering, procurement and construction. Through our unwavering commitment to innovation, excellence, and sustainability, we aim to foster a world empowered by reliable and environmentally responsible infrastructure. Our goal is to continually elevate our service offerings, reinforcing our position as a trusted industry leader, while contributing positively to the global communities we serve, all within a framework of integrity and enduring stakeholder relationships.",
+    "image": "project-2.jpg"
+  },
+   "11": {
+    "page": "companyPdfViewer",
+    "id": "11",
+    "title": "Download Monika Presentation",
+    "pdfUrl": "ASP.pdf"
+  },
+ 
+    "12": {
+  "page": "servicesSection",
+  "id": "12",
+  "title": "Our Services",
+  "cards": [
+    {
+      "title": "Project",
+      "description": "Superstructure in progress",
+      "img": "project-7.jpg"
+    },
+    {
+      "title": "Innovation",
+      "description": "Modern Construction Methods",
+      "img": "project-3.jpg"
+    },
+    {
+      "title": "Sustainability",
+      "description": "Eco-Friendly Construction",
+      "img": "project-2.jpg"
+    },
+    {
+      "title": "Safety & Quality Assurance",
+      "description": "Ensuring the highest standards",
+      "img": "project-5.jpg"
+    }
+  ]
+}
+,
+  "13": {
+    "subtitle": "PRODUCTS & SERVICES",
+    "title": "Pressure Vessel",
+    "description": [
+      "One of the key products offered by Fabtech Projects and Engineers Ltd is Pressure Vessels. As a leading EPC company, we have a robust track record of successfully executing oil and gas and refinery projects.",
+      "Our Pressure Vessels are integral to various industries, providing safe and secure containment for a wide range of gases and liquids under high pressure and temperature conditions. Designed and manufactured to precise specifications, our Pressure Vessels meet rigorous industry standards and regulatory requirements. We use advanced technology & software like PV Elite, Nozzle Pro to produce Vessels that meet or exceed industry standards."
+    ],
+    "features": [
+      {
+        "title": "High-Quality Construction",
+        "content": "Our Pressure Vessels are meticulously fabricated using premium materials, ensuring durability and long-lasting performance. Each vessel undergoes rigorous quality checks to guarantee structural integrity and leak-free operation."
+      },
+      {
+        "title": "Custom Designs",
+        "content": "We understand that different applications require unique solutions. That’s why our team of experienced engineers works closely with clients to design and manufacture Pressure Vessels tailored to their specific requirements."
+      },
+      {
+        "title": "Superior Safety Standards",
+        "content": "Safety is our top priority. Our Pressure Vessels are designed with comprehensive safety measures such as pressure relief devices, level indicators, and overpressure protection devices."
+      },
+      {
+        "title": "Compliance with Codes and Standards",
+        "content": "We strictly adhere to internationally recognized codes and standards such as ASME and API and also have IBR (Indian Boiler Regulation) to guarantee compliance."
+      }
+    ],
+    "conclusion": "At Fabtech Projects and Engineers Ltd, we have a proven track record in delivering high-quality Pressure Vessels that meet the unique needs of oil and gas and refinery projects. Clients trust our expertise and experience to provide top-notch solutions.",
+    "images": [
+      {
+        "src": "/project-1.jpg",
+        "alt": "Over-dimension Vessel, transported from Mumbai"
+      },
+      {
+        "src": "/project-2.jpg",
+        "alt": "Fabricated Pressure Vessel"
+      }
+    ]
+  },
+  "14": {
+    "page": "projectPage",
+    "id": "14",
+    "projectTitle": "Amazing Infrastructure Project",
+    "sections": [
+      {
+        "image": "project-1.jpg",
+        "title": "Foundation Work",
+        "description": "The foundation work was completed with state-of-the-art machinery.",
+        "buttonText": "Read More",
+        "link": "/project-1"
+      },
+      {
+        "image": "project-2.jpg",
+        "title": "Structural Framework",
+        "description": "The steel framework was installed ensuring safety and precision.",
+        "buttonText": "Discover",
+        "link": "/project-2"
+      },
+      {
+        "image": "project-3.jpg",
+        "title": "Finishing & Interiors",
+        "description": "The finishing touches and interiors were handled by expert designers.",
+        "buttonText": "View Details",
+        "link": "/project-3"
+      },
+       {
+        "image": "project-6.jpg",
+        "title": "Finishing & Interiors",
+        "description": "The finishing touches and interiors were handled by expert designers.",
+        "buttonText": "View Details"
+      }, {
+        "image": "project-5.jpg",
+        "title": "Finishing & Interiors",
+        "description": "The finishing touches and interiors were handled by expert designers.",
+        "buttonText": "View Details"
+      }, {
+        "image": "project-4.jpg",
+        "title": "Finishing & Interiors",
+        "description": "The finishing touches and interiors were handled by expert designers.",
+        "buttonText": "View Details"
+      },
+       {
+        "image": "project-1.jpg",
+        "title": "Finishing & Interiors",
+        "description": "The finishing touches and interiors were handled by expert designers.",
+        "buttonText": "View Details"
+      }
+    ]
+  },
+  "15": {
+    "team": [
+      {
+        "image": "project-1.jpg",
+        "name": "Shri Hardik Agrawal",
+        "position": "Chairman & Managing Director"
+      },
+      {
+        "image": "project-2.jpg",
+        "name": "Shri Kishor C Desarda",
+        "position": "Director"
+      },
+       {
+        "image": "project-3.jpg",
+        "name": "sjis refjvv",
+        "position": "Director"
+      },
+       {
+        "image": "project-4.jpg",
+        "name": "Shri  Desarda",
+        "position": "Director"
+      },
+      {
+        "image": "project-7.jpg",
+        "name": "Shri  Desarda",
+        "position": "Director"
+      }
+    ]
+  },
+
+  "16": {
+  "page": "servicePage",
+  "id": "16",
+  "serviceTitle": "Premium Services",
+  "sections": [
+    {
+      "image": "road-2.jpg",
+      "title": "Construction Management",
+      "description": "We offer end-to-end construction project management services.",
+      "buttonText": "Learn More",
+      "link": "/service-1"
+    },
+    {
+      "image": "road-3.jpg",
+      "title": "Interior Design",
+      "description": "Our interior designers craft beautiful and functional spaces.",
+      "buttonText": "Explore",
+      "link": "/service-2"
+    },
+    {
+      "image": "road-4.jpg",
+      "title": "Structural Engineering",
+      "description": "Ensuring structural integrity with innovative engineering.",
+      "buttonText": "Details",
+      "link": "/service-3"
+    },
+    {
+      "image": "road-5.jpg",
+      "title": "Road & Bridge Works",
+      "description": "Efficient development of roads and bridges across cities.",
+      "buttonText": "Read More"
+    },
+    {
+      "image": "road-1.jpg",
+      "title": "Water Supply & Sanitation",
+      "description": "Comprehensive water supply and sanitation services.",
+      "buttonText": "Know More"
+    }
+  ]
+}
+
+  
+}
+
+
+

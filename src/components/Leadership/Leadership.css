@@ -1,0 +1,36 @@
+
+.directors-container {
+  display: flex;
+  justify-content: center;
+  gap: -15px;
+  flex-wrap: wrap;
+  padding: 40px 0;
+  background-color: #f8fbfd;
+}
+
+.director-card {
+  text-align: center;
+  width: 160px;
+}
+
+.director-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.director-name {
+  margin: 10px 0 5px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #001f5a;
+}
+
+.director-position {
+  margin: 0;
+  font-size: 12px;
+  color: #001f5a;
+}

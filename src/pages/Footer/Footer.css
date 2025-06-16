@@ -1,0 +1,60 @@
+
+
+.footer-container {
+  background-color: blue;
+  font-family: 'Segoe UI', sans-serif;
+  color: #0c1e3c;
+ 
+}
+
+.footer-top {
+  display: flex;
+  justify-content: center; /* Center the inner wrapper */
+  padding: 2rem 0;
+  background-color: aliceblue;
+}
+
+.footer-top-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 2rem; /* side spacing */
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  margin: 0 1rem;
+}
+
+.footer-column h4 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #0c1e3c;
+}
+
+.footer-column p {
+  margin: 0.3rem 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.footer-bottom {
+  background-color: #031029;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+  flex-wrap: wrap;
+}
+
+
+.footer-icons i {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: white; /* 👈 This sets the icon color to white */
+  transition: color 0.3s ease;
+}

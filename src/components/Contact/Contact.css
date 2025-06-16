@@ -1,0 +1,60 @@
+
+/* Background container */
+.contact-container {
+  background-image: url('../../../public//project-2.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+/* Form styling */
+.form-box {
+  background-color: transparent;
+  padding: 30px;
+ 
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-box h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color:white;
+}
+
+/* Input and textarea */
+.form-box input,
+.form-box textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+ 
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Button */
+.form-box button {
+  background-color: #f16522;
+  color: white;
+  padding: 12px 20px;
+  border: 2px solid #d9561c;
+ 
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-box button:hover {
+  background-color: white;
+  border: 2px solid #d9561c;
+  color: black;
+}

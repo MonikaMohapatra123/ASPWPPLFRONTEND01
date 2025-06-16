@@ -1,0 +1,40 @@
+.AllProjectsIntro img {
+  width: 100%;
+  height:350px;
+}
+
+.AllProjectsIntro-para {
+  position: relative;
+  top: -350px;
+  text-align: center;
+}
+
+.AllProjectsIntro-para :nth-child(1) {
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.AllProjectsIntro-home {
+  position: relative;
+  top: -380px;
+  text-align: center;
+}
+
+.AllProjectsIntro-home:hover {
+  color: orangered;
+}
+
+.AllProjectsIntro-home a {
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+

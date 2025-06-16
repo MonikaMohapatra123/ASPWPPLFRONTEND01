@@ -1,0 +1,27 @@
+
+.company-contact-intro{
+ background: url("../../public/project-7.jpg");
+    height: 50vh;               /* Full screen height */
+  overflow: hidden;            /* Prevent unwanted vertical scroll */
+  display: flex;               /* Center content vertically & horizontally */
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0; 
+
+
+}
+ 
+
+.company-contact-intro-content{
+ color: white;
+ font-size: 30px;
+ font-weight: bold;
+ text-align: center;
+
+}
+.company-contact-intro-content a{
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 13px;
+   
+}

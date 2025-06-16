@@ -1,0 +1,85 @@
+
+
+.hero-container {
+  display: flex;
+  flex: 3;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero-text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  /* max-width: 90%; */
+}
+
+.hero-text-overlay p {
+ text-align: justify;
+ margin: 5px;
+ 
+}
+.hero-text-1st{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight:400;
+  color: cyan;
+  font-size: 50px;
+}
+.hero-text-2nd{
+  font-size: 55px;
+  font-weight:bolder;
+
+}
+
+.hero-button {
+  position: absolute;
+  border: none;
+  background: none;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.hero-button.prev {
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hero-button.next {
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+
+
+@media (max-width: 768px) {
+  .hero-text-overlay {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 1rem; /* Add spacing on small screens */
+    width: 90%;
+  }
+
+  
+}

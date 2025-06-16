@@ -1,0 +1,111 @@
+
+.nuclear-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+@media (min-width: 768px) {
+  .nuclear-container {
+    flex-direction: row;
+  }
+}
+
+.nuclear-left {
+  background-color: #f26b1d;
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45.6%;
+}
+
+.subheading {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.main-heading {
+  font-size: 48px;
+  margin-top: 10px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.divider {
+  width: 50px;
+  height: 3px;
+  background-color: white;
+  margin: 20px 0;
+}
+
+.description {
+  max-width: 500px;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 10px;
+}
+
+
+
+.arrow {
+  margin-left: 10px;
+}
+
+.nuclear-right {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.nuclear-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* New css for mobile */
+
+@media (max-width: 767px) {
+  .nuclear-container {
+    flex-direction: column;
+    height: auto; /* allow height to grow naturally */
+  }
+
+  .nuclear-left {
+    width: 90%;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .main-heading {
+    font-size: 28px;
+  }
+
+  .subheading {
+    font-size: 12px;
+  }
+
+  .description {
+    font-size: 13px;
+    margin: 15px 0;
+    padding: 0 10px;
+  }
+
+  .nuclear-right {
+    width: 100%;
+    height: 250px; /* fixed height for mobile image */
+  }
+
+  .nuclear-right img {
+    height: 100%;
+    object-fit: cover;
+  }
+}

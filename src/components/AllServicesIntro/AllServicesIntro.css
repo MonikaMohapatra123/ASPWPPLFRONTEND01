@@ -1,0 +1,35 @@
+
+.AllServices img {
+  width: 100%;
+  height:350px;
+}
+
+.AllServices-para {
+  position: relative;
+  top: -350px;
+  text-align: center;
+}
+
+.AllServices-para :nth-child(1) {
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.AllServices-home {
+  position: relative;
+  top: -380px;
+  text-align: center;
+}
+.AllServices-home a{
+  color: white;
+}
+
+.AllServices-home:hover {
+  color: orangered;
+}
+
+.AllServices-home a {
+  text-decoration: none;
+}
