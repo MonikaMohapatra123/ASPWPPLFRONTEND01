@@ -1,32 +1,18 @@
-
+/* 
 .product-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
    text-align: center;
 }
-/* .right-section {
-  text-align: center;
 
-} */
- /* .right-section {
-  flex: 1;
-  background-color: #1b2a47;
-  color: white;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;  
-  align-items: center;       
-  text-align: center;
-} */
 .center-text {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-bottom: 2rem; /* space below before slider */
+  margin-bottom: 2rem; 
   
 }
 .imageSlider-Product{
@@ -41,6 +27,192 @@
 }
 
 
+@media (max-width: 767px) {
+  .facility-image {
+    display: none;
+  }
+}
+
+
+
+
+@media (min-width: 768px) {
+  .product-container {
+    flex-direction: row;
+  }
+}
+
+.left-section {
+  width: 50%;
+  
+
+}
+
+ .facility-image{
+  height: 100%;
+ }
+
+
+.right-section {
+  flex: 1;
+  background-color: #1b2a47;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.top-label {
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.highlight {
+  color: #f36f21;
+}
+
+.divider {
+  margin: 1rem 0;
+  width: 50px;
+  border: 2px solid #f36f21;
+}
+
+.description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.certificates {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.cert-img {
+  
+  height: auto;
+  border: 1px solid #ddd;
+  background-color: white;
+}
+
+.nav-arrow {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.cta-button {
+  background-color: #f36f21;
+  color: white;
+  padding:15px 15px;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  width:32%;
+  white-space:nowrap;
+  text-align: center;
+  margin-left:180px;
+}
+
+.cta-button:hover {
+  background-color: #d85a10;
+} 
+
+
+
+.imageSlider-Product {
+  margin-left: 180px; 
+}
+
+
+@media (max-width: 767px) {
+  .imageSlider-Product {
+    margin-left: 0;         
+    width: 100%;           
+    padding: 0 10px;      
+    box-sizing: border-box; 
+  }
+ 
+}
+.imageSlider-Product {
+  margin-left: 180px; 
+  
+}
+
+
+ @media (max-width: 767px) {
+  .imageSlider-Product {
+    margin-left: 0;        
+    width: 100%;            
+    padding: 0 10px;       
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+  }
+
+  .cta-button {
+    margin-left: 0;
+    width: 100%;          
+    max-width: 300px;      
+    margin: 1rem auto 0;  
+  }
+} 
+ */
+
+
+
+
+ 
+.product-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+   text-align: center;
+}
+
+.center-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2rem; 
+  
+}
+.imageSlider-Product{
+  margin-left:180px;
+ 
+}
+.top-label{
+  margin: 50px;
+}
+.cta-button{
+  margin-left:25px;
+}
+
+/* Hide on mobile */
+@media (max-width: 767px) {
+  .facility-image {
+    display: none;
+  }
+}
+
+
+
+
 @media (min-width: 768px) {
   .product-container {
     flex-direction: row;
@@ -50,14 +222,13 @@
 .left-section {
   width: 50%;
   /* flex: 1; */
+
 }
 
-
-.facility-image {
-  width: 100%;
+ .facility-image{
   height: 100%;
-  object-fit: cover;
-}
+ }
+
 
 .right-section {
   flex: 1;
@@ -176,4 +347,61 @@
     margin: 1rem auto 0;  
   }
 } 
+
+/* Tablet styles (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .product-container {
+    flex-direction: column; /* Stack like mobile for better layout */
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%;
+  }
+
+  .imageSlider-Product {
+    margin-left: 0;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+  }
+
+  .cta-button {
+    margin-left: 0;
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem auto 0;
+  }
+
+  .heading {
+    font-size: 2.2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .certificates {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .facility-image {
+    display: none;
+  }
+}
+
+
+.imageSlider-Product {
+  width: 100%;
+  max-width: 100%;         /* no horizontal scroll */
+  padding: 0 10px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;       /* hide if anything tries to overflow */
+}
 

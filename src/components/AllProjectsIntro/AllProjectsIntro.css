@@ -1,4 +1,4 @@
-.AllProjectsIntro img {
+/* .AllProjectsIntro img {
   width: 100%;
   height:350px;
 }
@@ -37,4 +37,69 @@
 
 
 
+ */
+ .AllProjectsIntro {
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.AllProjectsIntro img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+/* Main heading text */
+.AllProjectsIntro-para {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+.AllProjectsIntro-para p {
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Navigation Links */
+.about-intro-home {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+.about-intro-home a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+ 
+  padding: 6px 12px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.about-intro-home a:hover {
+  color: orangered;
+}
+
+/* Responsive for small screens */
+@media (max-width: 600px) {
+  .AllProjectsIntro-para p {
+    font-size: 28px;
+  }
+
+  .about-intro-home a {
+    font-size: 14px;
+    padding: 4px 8px;
+    margin: 5px;
+  }
+}
 

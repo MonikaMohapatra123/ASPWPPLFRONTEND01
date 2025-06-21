@@ -64,6 +64,7 @@
   justify-content: space-between;
   gap: 40px;
   background-color: #f9fbfd;
+    font-family: 'Poppins', sans-serif;
 }
 
 .about-text {

@@ -26,6 +26,7 @@ const ProjectIntro = ({ paragraph, linkText, linkTo }) => {
       <div className='company-project-intro-content'>
         <p>{paragraph}</p>
         <Link to={linkTo || '/'}>{linkText}</Link>
+        <Link to="/projects">PROJECTS</Link>
       </div>
     </div>
   );

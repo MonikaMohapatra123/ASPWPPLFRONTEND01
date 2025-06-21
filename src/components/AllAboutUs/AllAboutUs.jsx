@@ -1,23 +1,21 @@
+
+
+
+
 // import React from 'react';
 // import './AllAboutUs.css';
 
-
-// const AllAboutUs = () => {
+// const AllAboutUs = ({ subtitle, title, description, image }) => {
 //   return (
 //     <div className="about-section">
 //       <div className="about-text">
-//         <h4 className="about-subtitle">ABOUT OUR</h4>
-//         <h2 className="about-title">
-//           Fabtech Projects and <br /> Engineers Ltd. (FPEL)
-//         </h2>
+//         <h4 className="about-subtitle">{subtitle}</h4>
+//         <h2 className="about-title">{title}</h2>
 //         <div className="underline"></div>
-//         <p>
-//           Established in 1992 and headquartered in the city of Baner, Pune, <strong>Fabtech Projects and Engineers Ltd. (FPEL)</strong> – A <strong>Dineshchandra Group</strong> of Company stands as a testament to engineering excellence and innovation. With a profound expertise in LSTK & EPCC projects, FPEL has etched a strong presence across the Up-Stream (Onshore), Mid-Stream, and Down Stream Sectors...
-//           {/* Truncated for simplicity; use full paragraph here */}
-//         </p>
+//         <p dangerouslySetInnerHTML={{ __html: description }}></p>
 //       </div>
 //       <div className="about-image">
-//         <img src="project-5.jpg" alt="Plant" />
+//         <img src={image} alt="About Us" />
 //       </div>
 //     </div>
 //   );
@@ -26,11 +24,21 @@
 // export default AllAboutUs;
 
 
-
-import React from 'react';
+import React, { useEffect } from 'react';
 import './AllAboutUs.css';
+import { motion, useAnimate } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const AllAboutUs = ({ subtitle, title, description, image }) => {
+  const [scope, animate] = useAnimate();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      animate(scope.current, { opacity: 1, x: 0 }, { duration: 1 });
+    }
+  }, [inView, animate, scope]);
+
   return (
     <div className="about-section">
       <div className="about-text">
@@ -39,12 +47,19 @@ const AllAboutUs = ({ subtitle, title, description, image }) => {
         <div className="underline"></div>
         <p dangerouslySetInnerHTML={{ __html: description }}></p>
       </div>
-      <div className="about-image">
+
+      <motion.div
+        ref={(node) => {
+          scope.current = node;
+          ref(node);
+        }}
+        className="about-image"
+        initial={{ opacity: 0, x: 100 }} // 👈 right to left animation
+      >
         <img src={image} alt="About Us" />
-      </div>
+      </motion.div>
     </div>
   );
 };
 
 export default AllAboutUs;
-

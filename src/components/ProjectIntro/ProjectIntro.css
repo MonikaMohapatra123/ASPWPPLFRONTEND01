@@ -10,9 +10,13 @@
   background-color: #f0f0f0; 
 
 }
+.company-project-intro-content a{
+  margin: 12px 12px;
+}
 
 .company-project-intro-content p{
   margin-top: -20px;
+
 }
 .company-project-intro-content{
  color: white;

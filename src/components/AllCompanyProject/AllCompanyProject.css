@@ -4,6 +4,7 @@
   min-height: 100vh;
   font-family: 'Segoe UI', sans-serif;
   width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .allcompanyproject-left {
   background-color: #f26522;
@@ -94,6 +95,11 @@
     font-size: 0.9rem;
     padding: 0.7rem 1rem;
   }
+
+.allcompanyproject-services-list{
+    text-align: justify;
+}
+
 }
 
 

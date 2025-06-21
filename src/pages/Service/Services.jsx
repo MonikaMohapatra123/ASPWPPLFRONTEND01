@@ -16,7 +16,7 @@ const Services = () => {
     // const serviceDataInfo = data["13"];
   return (
     <div className='services'>
-      <AllServicesIntro/>
+      <AllServicesIntro paragraphText="Our Services"/>
       <AllServices/>
       <AllServiceDetails cards={serviceData} />
     </div>

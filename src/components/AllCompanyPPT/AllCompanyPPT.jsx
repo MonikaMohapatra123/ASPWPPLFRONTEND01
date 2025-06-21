@@ -42,3 +42,6 @@ const AllCompanyPPT = ({ data }) => {
 };
 
 export default AllCompanyPPT;
+
+
+

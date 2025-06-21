@@ -11,7 +11,7 @@ const AboutIntro = () => {
                
              
         </div>
-        <div className='about-intro-home'> <Link to="/">HOME</Link></div>
+        <div className='about-intro-home'> <Link to="/">HOME</Link><Link to='/projects'>PROJECT</Link></div>
     </div>
   )
 }

@@ -1,4 +1,4 @@
-
+/* 
 
 .footer-container {
   background-color: blue;
@@ -9,7 +9,8 @@
 
 .footer-top {
   display: flex;
-  justify-content: center; /* Center the inner wrapper */
+  justify-content: center; 
+  
   padding: 2rem 0;
   background-color: aliceblue;
 }
@@ -20,7 +21,7 @@
   flex-wrap: wrap;
   max-width: 1200px;
   width: 100%;
-  padding: 0 2rem; /* side spacing */
+  padding: 0 2rem; 
 }
 
 .footer-column {
@@ -55,6 +56,123 @@
   margin-left: 1rem;
   font-size: 1.2rem;
   cursor: pointer;
-  color: white; /* 👈 This sets the icon color to white */
+  color: white; 
   transition: color 0.3s ease;
+} */
+
+
+.footer-container {
+  background-color: blue;
+  font-family: 'Segoe UI', sans-serif;
+  color: #0c1e3c;
+  width: 100%;
+}
+
+/* Top Section */
+.footer-top {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  background-color: aliceblue;
+}
+
+/* Inner content wrapper */
+.footer-top-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 2rem;
+  
+}
+
+/* Each column */
+.footer-column {
+  flex: 1 1 220px; /* min width 220px, can grow */
+  /* margin: 0 1rem; */
+}
+
+.footer-column h4 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #0c1e3c;
+}
+
+.footer-column p {
+  margin: 0.3rem 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* Bottom Section */
+.footer-bottom {
+  background-color: #031029;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Social icons */
+.footer-icons i {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.footer-icons i:hover {
+  color: #f36f21; /* Optional hover effect */
+}
+
+/* ===== Responsive Breakpoints ===== */
+
+/* For small devices (max 767px) */
+@media (max-width: 767px) {
+  .footer-top-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 1rem;
+  }
+
+  .footer-column {
+    margin: 1rem 0;
+    width: 100%;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .footer-icons {
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+
+/* For tablets (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer-top-inner {
+    justify-content: space-around;
+  }
+
+  .footer-column {
+    flex: 1 1 45%;
+    margin: 1rem 0;
+  }
+
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
 }
