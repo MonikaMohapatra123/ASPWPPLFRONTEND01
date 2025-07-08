@@ -1,17 +1,6 @@
-
 import React, { useState } from "react";
 
-const ImageSlider = () => {
-  const images = [
-    "project-1.jpg",
-    "project-2.jpg",
-    "project-3.jpg",
-    "project-4.jpg",
-    "project-5.jpg",
-    "project-6.jpg",
-    "project-3.jpg",
-  ];
-
+const ImageSlider = ({images}) => {
   const [index, setIndex] = useState(0);
 
   const imagesPerView = 2;
@@ -45,9 +34,15 @@ const ImageSlider = () => {
           {images.map((src, i) => (
             <div
               key={i}
-              style={{ ...styles.slide, width: slideWidth, marginRight: slideGap }}
+              style={{
+                ...styles.slide,
+                width: slideWidth,
+                marginRight: slideGap,
+              }}
             >
-              <img src={src} alt={`Slide ${i + 1}`} style={styles.image} />
+              <a href={src} target="_blank" rel="noopener noreferrer">
+                <img src={src} alt={`Slide ${i + 1}`} style={styles.image} />
+              </a>
             </div>
           ))}
         </div>
@@ -63,7 +58,7 @@ const ImageSlider = () => {
 const styles = {
   sliderContainer: {
     position: "relative", // needed for absolute buttons inside
-     marginLeft:"-5px"
+    marginLeft: "-5px",
   },
   sliderWrapper: {
     overflow: "hidden",
@@ -79,7 +74,7 @@ const styles = {
     width: "80%",
     height: "150px",
     objectFit: "cover",
-    
+
     boxShadow: "0 0 10px rgba(0,0,0,0.2)",
   },
   sideButton: {
@@ -99,4 +94,3 @@ const styles = {
 };
 
 export default ImageSlider;
-

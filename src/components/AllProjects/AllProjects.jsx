@@ -1,22 +1,22 @@
-
 import React from "react";
-import { Link } from "react-router-dom"; // Import Link
-import projectData from "../../json/data.json";
+import { Link } from "react-router-dom";
 import "./AllProjects.css";
 
-const AllProjects = () => {
-  const project = projectData["14"];
-
+const AllProjects = ({ project }) => {
   return (
     <div className="image-slide-grid">
-      {project.sections.map(({ image, title, description, buttonText, link }, index) => (
-        <div className="slide-box" key={index}>
-         <img src={image} alt={title} className="slide-image" />  
+      {project.map((item, index) => (
+        <div className="slide-box" key={item._id || index}>
+          <img
+            src={item.photo?.[0]?.url || "/placeholder.jpg"}
+            alt={item.projectsname}
+            className="slide-image"
+          />
           <div className="slide-overlay">
-            <h3>{title}</h3>
-            <p>{description}</p>
-            <Link to={link}>
-              <button>{buttonText}</button>
+            <h3>{item.projectsname}</h3>
+            <p>{item.details}</p>
+            <Link to={`/projects/${item._id}`}>
+              <button>View More</button>
             </Link>
           </div>
         </div>
@@ -26,4 +26,3 @@ const AllProjects = () => {
 };
 
 export default AllProjects;
-

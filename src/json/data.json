@@ -105,7 +105,16 @@
     "image": "project-5.jpg",
     "buttonText": "CHECK ALL PRODUCTS",
     "buttonArrow": "→",
-    "sliderComponent": "ImageSlider"
+    "sliderComponent": "ImageSlider",
+    "imageSlider" : [
+    "project-1.jpg",
+    "project-2.jpg",
+    "project-3.jpg",
+    "project-4.jpg",
+    "project-5.jpg",
+    "project-6.jpg",
+    "project-3.jpg"
+  ]
   },
   "5": {
     "page": "allCompanyNuclear",

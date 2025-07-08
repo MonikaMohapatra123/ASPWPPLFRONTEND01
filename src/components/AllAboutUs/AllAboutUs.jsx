@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 
@@ -63,3 +64,28 @@ const AllAboutUs = ({ subtitle, title, description, image }) => {
 };
 
 export default AllAboutUs;
+=======
+import React from 'react';
+import './AllAboutUs.css';
+
+const AllAboutUs = ({ subtitle, title, description, image }) => {
+
+  console.log(title);
+  return (
+    <div className="about-section">
+      <div className="about-text">
+        <h4 className="about-subtitle">{subtitle}</h4>
+        <h2 className="about-title">{title}</h2>
+        <div className="underline"></div>
+        <p dangerouslySetInnerHTML={{ __html: description }}></p>
+      </div>
+      <div className="about-image">
+        <img src={image} alt="About Us" />
+      </div>
+    </div>
+  );
+};
+
+export default AllAboutUs;
+
+>>>>>>> 103ce2c (WIP: Save progress before rebase)

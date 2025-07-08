@@ -1,47 +1,45 @@
-
-
-
 import React from "react";
-import data from "../../json/data.json"; // Adjust path based on your file structure
 import ImageSlider from "./ImageSlider.jsx";
 import "./AllCompanyProduct.css";
 
-export default function AllCompanyProduct() {
-  // Get the data for id 4
-  const productData = data["4"];
+export default function AllCompanyProduct({
+  image,
+  topLabel,
+  highlight,
+  description,
+  buttonText,
+  imagesSlider
+}) {
 
   return (
-    <div className="product-container">
+    <div className="allcompanyproduct-container">
       {/* Left Section - Image */}
-      <div className="left-section">
+      <div className="allcompanyproductleft-section">
         <img
-          src={productData.image} // "project-5.jpg"
-          alt="Fabtech Facility"
-          className="facility-image"
+          src={image}
+          alt="Product Visual"
+          className="allcompanyproductfacility-image"
         />
       </div>
 
       {/* Right Section - Content */}
-      <div className="right-section">
-        <div className="center-text">
-          <p className="top-label">{productData.topLabel}</p>
+      <div className="allcompanyproductright-section">
+        <div className="allcompanyproductcenter-text">
+          <p className="allcompanyproducttop-label">{topLabel}</p>
 
-          <h1 className="heading">
-            <span className="highlight">{productData.highlight}</span> DIVISION
+          <h1 className="allcompanyproductheading">
+            <span className="allcompanyproducthighlight">{highlight}</span> DIVISION
           </h1>
 
-          {/* <hr className="divider" /> */}
-
-          <p className="description">{productData.description}</p>
+          <p className="allcompanyproductdescription">{description}</p>
         </div>
 
-        {/* ImageSlider component */}
-        <div className="imageSlider-Product">
-          <ImageSlider />
+        <div className="allcompanyproductimageSlider-Product">
+          <ImageSlider images={imagesSlider} />
         </div>
 
-        <button className="cta-button">
-          {productData.buttonText} &#10140;
+        <button className="allcompanyproductcta-button">
+          {buttonText} &#10140;
         </button>
       </div>
     </div>

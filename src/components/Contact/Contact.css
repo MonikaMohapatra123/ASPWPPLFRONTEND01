@@ -1,60 +1,105 @@
-
 /* Background container */
 .contact-container {
-  background-image: url('../../../public//project-2.jpg');
+  position: relative;
   background-size: cover;
   background-position: center;
-  min-height: 100vh;
+  min-height: 600px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   padding: 40px;
   box-sizing: border-box;
+  z-index: 1;
+  overflow: hidden;
 }
 
-/* Form styling */
-.form-box {
-  background-color: transparent;
-  padding: 30px;
- 
+/* Bluish overlay */
+.contact-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 450px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  background: rgba(0, 90, 180, 0.4); /* bluish tint */
+  z-index: -1;
 }
 
-.form-box h2 {
+/* Form wrapper */
+.contact-form-box {
+  padding: 20px;
+  width: 100%;
+  max-width: 50%;
+}
+
+/* Title */
+.contact-title {
   margin-bottom: 20px;
-  font-size: 24px;
-  color:white;
+  font-size: 40px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  margin-top: 0;
+}
+
+/* Form layout */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 /* Input and textarea */
-.form-box input,
-.form-box textarea {
+.contact-input,
+.contact-textarea {
   width: 100%;
-  padding: 12px;
-  margin-bottom: 15px;
+  padding: 25px;
   border: 1px solid #ccc;
- 
   box-sizing: border-box;
   font-size: 16px;
+  outline: none;
+  background-color: white;
 }
 
-/* Button */
-.form-box button {
+
+
+
+.contact-input:focus,
+.contact-textarea:focus {
+  border-color: #f16522;
+}
+
+/* Button styling */
+.contact-submit-button {
   background-color: #f16522;
   color: white;
   padding: 12px 20px;
   border: 2px solid #d9561c;
- 
   font-weight: bold;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.form-box button:hover {
+.contact-submit-button:hover {
   background-color: white;
+  color: #d9561c;
   border: 2px solid #d9561c;
-  color: black;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .contact-container {
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .contact-form-box {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .contact-title {
+    font-size: 20px;
+  }
 }

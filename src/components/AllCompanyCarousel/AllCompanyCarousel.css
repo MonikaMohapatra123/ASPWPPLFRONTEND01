@@ -1,108 +1,131 @@
-/* 
 .carousel-container {
-  width: 600px;
-   margin-top: 30px;
-   margin-left: 400px;
-  font-family: sans-serif;
-  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  margin: auto;
+  position: relative;
+  padding: 30px;
 }
 
-.slide img {
-   
- width: 100px;
- height: 100px;
- border-radius: 50%;
+.slides-wrapper {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+  width: 100%;
 }
 
-.slide p {
-  margin: 10px 10px;
-  font-size: 16px;
-  color: #333;
-}
-
-.slide h2 {
-  margin-top: 5px;
-  font-size: 20px;
-  color: #222;
-}
-
-.indicators {
-  margin-top: 10px;
-}
-
-.dot {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  margin: 0 5px;
-  background-color: lightgray;
-  border-radius: 50%;
-  transition: background-color 0.3s ease;
-}
-
-.dot.active {
-  background-color: orange;
-}  */
-
-
-
-/* AllCompanyCarousel.css */
-
-/* * {
+.slide {
+  min-width: 100%;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html, body {
-  height: 100%;
-  overflow-x: hidden;
-  font-family: sans-serif;
-} */
-
-/* Carousel Styling */
-.carousel-container {
-  max-width: 500px;
-  margin: 40px auto;
-  padding: 20px;
   text-align: center;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 70px;
+  background: white;
 }
 
 .slide img {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
-}
-
-.slide p {
-  margin: 10px 0;
-  font-size: 16px;
-  color: #333;
+  margin-bottom: 15px;
+  border: 4px solid #f16522;
 }
 
 .slide h2 {
-  margin-top: 5px;
-  font-size: 20px;
+  font-size: 22px;
   color: #222;
+  margin-bottom: 10px;
+}
+
+.slide p {
+  font-size: 16px;
+  color: #444;
 }
 
 .indicators {
-  margin-top: 10px;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .dot {
   display: inline-block;
   width: 12px;
   height: 12px;
-  margin: 0 5px;
-  background-color: lightgray;
+  margin: 0 6px;
+  background-color: #ddd;
   border-radius: 50%;
-  transition: background-color 0.3s ease;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .dot.active {
-  background-color: orange;
+  background-color: #f16522;
+}
+
+/* ✅ Responsive Styles */
+@media (max-width: 992px) {
+  .slide {
+    padding: 50px;
+  }
+
+  .slide img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .slide h2 {
+    font-size: 20px;
+  }
+
+  .slide p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slide {
+    padding: 40px;
+  }
+
+  .slide img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .slide h2 {
+    font-size: 18px;
+  }
+
+  .slide p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-container {
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .slide {
+    padding: 30px 15px;
+  }
+
+  .slide img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .slide h2 {
+    font-size: 16px;
+  }
+
+  .slide p {
+    font-size: 13px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+  }
 }

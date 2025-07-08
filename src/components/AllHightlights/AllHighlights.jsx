@@ -3,55 +3,47 @@ import './AllHighlights.css';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-const AllHighlights = () => {
-  const sampleData = [
-    { name: 'Projects Completed', count: 120 },
-    { name: 'Happy Clients', count: 85 },
-    { name: 'Ongoing Projects', count: 10 },
-    
-  ];
-
-  const [isVisible, setIsVisible] = useState(false);
+const AllHighlights = ({ sampleData }) => {
   const [currentCounts, setCurrentCounts] = useState(
-    Array(sampleData.length).fill(0)
+    sampleData.map(() => 0)
   );
-  const highlightsRef = useRef(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (highlightsRef.current) {
-        const top = highlightsRef.current.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
-        setIsVisible(top < windowHeight);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  useEffect(() => {
-    if (isVisible) {
-      const interval = setInterval(() => {
-        setCurrentCounts(prevCounts =>
-          prevCounts.map((count, index) =>
-            count < sampleData[index].count ? count + 1 : count
-          )
-        );
-      }, 10); // adjust for smoothness
-      return () => clearInterval(interval);
-    }
-  }, [isVisible]);
 
   const animationControls = useAnimation();
-  const [ref, inView] = useInView();
+  const [ref, inView] = useInView({ triggerOnce: true });
+  const animationFrameRef = useRef();
 
+  // Count up logic with requestAnimationFrame for smoother visuals
+  useEffect(() => {
+    if (inView) {
+      const start = performance.now();
+
+      const step = () => {
+        setCurrentCounts(prevCounts =>
+          prevCounts.map((count, index) => {
+            const target = sampleData[index].count;
+            const increment = Math.ceil(target / 100); // Faster finish for large numbers
+            return count < target ? Math.min(count + increment, target) : count;
+          })
+        );
+
+        const allReached = currentCounts.every((count, index) => count >= sampleData[index].count);
+        if (!allReached) {
+          animationFrameRef.current = requestAnimationFrame(step);
+        }
+      };
+
+      animationFrameRef.current = requestAnimationFrame(step);
+      return () => cancelAnimationFrame(animationFrameRef.current);
+    }
+  }, [inView, sampleData]);
+
+  // Trigger entrance animation
   useEffect(() => {
     if (inView) {
       animationControls.start({
         opacity: 1,
         y: 0,
-        transition: { duration: 1 },
+        transition: { duration: 0.8 },
       });
     }
   }, [animationControls, inView]);
@@ -64,10 +56,10 @@ const AllHighlights = () => {
         initial={{ opacity: 0, y: 60 }}
         animate={animationControls}
       >
-        <div className="high-container" ref={highlightsRef}>
+        <div className="high-container">
           {sampleData.map(({ name }, index) => (
             <div key={index} className="highlight-item">
-              <p className="high-count">{currentCounts[index]} +</p>
+              <p className="high-count">{currentCounts[index]}+</p>
               <h2 className="high-highlights">{name}</h2>
             </div>
           ))}
@@ -78,4 +70,3 @@ const AllHighlights = () => {
 };
 
 export default AllHighlights;
-

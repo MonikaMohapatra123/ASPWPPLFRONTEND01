@@ -24,3 +24,5 @@ const AllAboutMission = ({ subtitle, title, highlight, description, image }) => 
 };
 
 export default AllAboutMission;
+
+

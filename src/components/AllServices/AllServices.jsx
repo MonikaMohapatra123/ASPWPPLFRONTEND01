@@ -1,26 +1,22 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import serviceData from "../../json/data.json";
 import "./AllServices.css";
 
-const AllServices = () => {
-  const service = serviceData["16"];
+const AllServices = ({ service }) => {
+  if (!service || !Array.isArray(service)) return null;
 
   return (
     <div className="image-slide-grid">
-      {service.sections.map(({ image, title, description, buttonText, link }, index) => (
+      {service.map((item, index) => (
         <div className="slide-box" key={index}>
-          <img src={image} alt={title} className="slide-image" />
+          <img
+            src={item?.photo?.[0]?.url || item.ContentPhoto}
+            alt={item.title}
+            className="slide-image"
+          />
           <div className="slide-overlay">
-            <h3>{title}</h3>
-            <p>{description}</p>
-            {link ? (
-              <Link to={link}>
-                <button>{buttonText}</button>
-              </Link>
-            ) : (
-              <button>{buttonText}</button>
-            )}
+            <h3>{item.title}</h3>
+            <p>{item.details}</p>
+            <button>{item.Header || "View Details"}</button>
           </div>
         </div>
       ))}

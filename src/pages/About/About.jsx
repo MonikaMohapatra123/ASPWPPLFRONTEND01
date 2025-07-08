@@ -1,50 +1,68 @@
-
-import React from 'react';
-import AboutIntro from '../../components/AboutIntro/AboutIntro';
-import AllAboutUs from '../../components/AllAboutUs/AllAboutUs';
-import AllAboutVision from '../../components/AllAboutVision/AllAboutVision';
-import AllAboutMission from '../../components/AllAboutMission/AllAboutMission';
-import AllCompanyPPT from"../../components/AllCompanyPPT/AllCompanyPPT";
-import data from '../../json/data.json';
-import AllHighlights from '../../components/AllHightlights/AllHighlights';
-import Leadership from '../../components/Leadership/Leadership';
+import React, { useEffect, useState } from "react";
+import AllIntroTemplate from "../../components/AllIntroTemplate/AllIntroTemplate";
+import AllAboutUs from "../../components/AllAboutUs/AllAboutUs";
+import AllAboutVision from "../../components/AllAboutVision/AllAboutVision";
+import AllAboutMission from "../../components/AllAboutMission/AllAboutMission";
+import { getStoredData } from "../../json/fetchData";
+import AllHighlights from "../../components/AllHightlights/AllHighlights";
+import Leadership from "../../components/Leadership/Leadership";
+import Loader from "../../components/Loader/Loader";
+import AllSectionAbout from "../../components/AllSectionAbout/AllSectionAbout";
+import AllCompanyProduct from "../../components/AllCompanyProduct/AllCompanyProduct";
 
 const About = () => {
-  const aboutUsData = data["8"];
-  const aboutVisionData = data["9"];
-  const aboutMissionData = data["10"];
-  const pdfData = data["11"];
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    const stored = getStoredData();
+    setData(stored);
+  }, []);
+
+  if (!data) return <Loader />;
+
+  const Data = data["2"];
 
   return (
     <div>
-      <AboutIntro />
+      <AllIntroTemplate title={Data.Introsubtitle} image={Data.Introimage} />
       <AllAboutUs
-        subtitle={aboutUsData.subtitle}
-        title={aboutUsData.title}
-        description={aboutUsData.description}
-        image={aboutUsData.image}
+        subtitle={Data.AboutUssubtitle}
+        title={Data.AboutUstitle}
+        description={Data.AboutUsdescription}
+        image={Data.AboutUsimage}
       />
-        <AllHighlights/>
-      <AllAboutVision
-        subtitle={aboutVisionData.subtitle}
-        title={aboutVisionData.title}
-        highlight={aboutVisionData.highlight}
-        description={aboutVisionData.description}
-        image={aboutVisionData.image}
+      <AllHighlights sampleData={Data.HighlightsData} />
+
+      <AllSectionAbout
+        reverse={true} // image on left
+        subtitle={Data.AboutUssubtitle}
+        title={Data.AboutUstitle}
+        highlight={Data.AboutUshighlight}
+        description={Data.AboutUsdescription}
+        image={Data.AboutUsimage}
       />
-      <AllAboutMission
-        subtitle={aboutMissionData.subtitle}
-        title={aboutMissionData.title}
-        highlight={aboutMissionData.highlight}
-        description={aboutMissionData.description}
-        image={aboutMissionData.image}
+
+      <AllSectionAbout
+        subtitle={Data.Highlightssubtitle}
+        title={Data.Highlightstitle}
+        highlight={Data.Highlightshighlight}
+        description={Data.Highlightsdescription}
+        image={Data.Highlightsimage}
+        reverse={false} // image on right
       />
-    
-    <Leadership/>
-<AllCompanyPPT data={pdfData} />
+
+      <AllCompanyProduct
+        image={Data.productImage}
+        topLabel={Data.productTopLabel}
+        highlight={Data.productHighlight}
+        description={Data.productDescription}
+        buttonText={Data.productButtonText}
+        imagesSlider={Data.imagesSlider}
+      />
+
+      <Leadership directors={Data.team} />
     </div>
   );
 };
 
 export default About;
-

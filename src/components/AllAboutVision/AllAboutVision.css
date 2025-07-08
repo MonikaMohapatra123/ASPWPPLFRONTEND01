@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* 
 .vision-container {
   display: flex;
@@ -191,3 +192,110 @@
     height: auto;
   }
 }
+=======
+.vision-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  min-height: 500px;
+  background-color: #1B2A47;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+}
+
+.vision-left,
+.vision-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.vision-left {
+  padding: 60px;
+}
+
+.vision-subtitle {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.vision-title {
+  font-size: 36px;
+  margin: 10px 0;
+  font-weight: 400;
+}
+
+.vision-title span {
+  font-weight: 700;
+}
+
+.vision-line {
+  width: 40px;
+  height: 2px;
+  background-color: white;
+  margin: 10px 0 20px;
+  border: none;
+}
+
+.vision-text {
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.vision-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .vision-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .vision-left,
+  .vision-right {
+    width: 50%;
+    padding: 30px;
+  }
+
+  .vision-title {
+    font-size: 28px;
+  }
+
+  .vision-text {
+    font-size: 13px;
+  }
+
+  .vision-right img {
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .vision-container {
+    flex-direction: column;
+  }
+
+  .vision-left,
+  .vision-right {
+    width: 100%;
+  }
+
+  .vision-left {
+    padding: 20px;
+  }
+
+  .vision-right img {
+    height: auto;
+  }
+}
+>>>>>>> 103ce2c (WIP: Save progress before rebase)

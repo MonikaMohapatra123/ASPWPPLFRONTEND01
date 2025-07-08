@@ -1,22 +1,18 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import './Details.css';
 
-const AllServiceDetails = ({ cards }) => {
-  const [index, setIndex] = useState(1); // Must be outside condition
-  const sliderRef = useRef(null);       // Must be outside condition
+const AllServiceDetails = ({ service }) => {
+  const [index, setIndex] = useState(1);
+  const sliderRef = useRef(null);
 
-  // Fallback to empty object to avoid crash
-  const cardArray = Object.values(cards || {});
+  const serviceArray = Array.isArray(service) ? service : [];
 
-
-  
-  // Prepare slides only if cards are available
+  // Infinite loop setup
   const slides =
-    cardArray.length > 0
-      ? [cardArray[cardArray.length - 1], ...cardArray, cardArray[0]]
+    serviceArray.length > 0
+      ? [serviceArray[serviceArray.length - 1], ...serviceArray, serviceArray[0]]
       : [];
 
   const moveToIndex = (i) => {
@@ -52,9 +48,8 @@ const AllServiceDetails = ({ cards }) => {
     return () => slider.removeEventListener('transitionend', handleTransitionEnd);
   }, [index, slides.length]);
 
-
-  if (!cards || cardArray.length === 0) {
-    return <div className="no-cards">No cards to display</div>;
+  if (!service || serviceArray.length === 0) {
+    return <div className="no-cards">No services to display</div>;
   }
 
   return (
@@ -66,11 +61,15 @@ const AllServiceDetails = ({ cards }) => {
               <div className="card-content">
                 <div className="card-heading">
                   <div>—Our Services</div>
-                  <div className="card-description">{card.description}</div>
+                  <div className="card-description">{card.details}</div>
                   <div className="card-title">{card.title}</div>
                 </div>
                 <div>
-                  <img src={card.img} alt={card.description}  loading="lazy" />
+                  <img
+                    src={card?.photo?.[0]?.url || card?.ContentPhoto}
+                    alt={card.title}
+                    loading="lazy"
+                  />
                 </div>
               </div>
             </div>
@@ -92,4 +91,4 @@ const AllServiceDetails = ({ cards }) => {
   );
 };
 
-export default  AllServiceDetails;
+export default AllServiceDetails;

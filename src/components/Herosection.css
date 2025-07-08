@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .hero-container {
   display: flex;
   flex: 3;
@@ -152,3 +153,160 @@
 
 
 
+=======
+.hero-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+  max-height: 850px;
+  margin-top: -6.5rem;
+}
+
+.hero-slider {
+  display: flex;
+  transition: transform 0.8s ease-in-out;
+  height: 100%;
+}
+
+.hero-slide {
+  flex: 0 0 100%;
+  height: 100%;
+  position: relative;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+    filter: brightness(0.7);
+}
+
+/* Text Overlay */
+.hero-text-overlay {
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+  z-index: 2;
+  color: var(--white);
+  max-width: 80%;
+  text-shadow: 0 2px 8px var(--overlay-color);
+}
+
+/* Text Styles */
+.hero-text-line {
+  margin: 10px 0;
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
+}
+
+.hero-text-1 {
+  font-size: clamp(30px, 5vw, 42px);
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  animation-delay: 0.1s;
+  color: var(--white);
+}
+
+.hero-text-2 {
+display: none;
+}
+
+.hero-text-3 {
+  font-size: clamp(14px, 3.2vw, 20px);
+  font-weight: 500;
+  color: var(--white);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.3)
+  ); /* Keep gradient for now */
+  padding: 10px 18px;
+  border-radius: 8px;
+  display: inline-block;
+  box-shadow: 0 4px 10px var(--overlay-color);
+  animation-delay: 0.7s;
+  backdrop-filter: blur(4px);
+  letter-spacing: 0.5px;
+  transition: transform 0.3s ease;
+}
+
+.hero-text-3:hover {
+  transform: scale(1.03);
+}
+
+/* Animation */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive: Tablet */
+@media (max-width: 1024px) {
+  .hero-container {
+    height: 700px;
+  }
+
+  .hero-text-overlay {
+    bottom: 40px;
+    left: 40px;
+    max-width: 90%;
+  }
+}
+
+/* Responsive: Mobile */
+@media (max-width: 768px) {
+  .hero-container {
+    height: 600px;
+  }
+
+  .hero-text-overlay {
+    bottom: 24px;
+    left: 20px;
+  }
+
+  .hero-text-3 {
+    padding: 8px 14px;
+  }
+}
+
+/* Responsive: Small Mobile */
+@media (max-width: 480px) {
+  .hero-container {
+    height: 700px;
+    aspect-ratio: 16 / 9;
+  }
+
+  .hero-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-text-overlay {
+    bottom: 12px;
+    left: 12px;
+    max-width: 95%;
+  }
+
+  .hero-text-1 {
+    font-size: 20px;
+  }
+
+  .hero-text-2 {
+    font-size: 16px;
+  }
+
+  .hero-text-3 {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
+>>>>>>> 103ce2c (WIP: Save progress before rebase)

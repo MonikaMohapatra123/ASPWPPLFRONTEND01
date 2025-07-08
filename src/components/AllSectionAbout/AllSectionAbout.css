@@ -1,0 +1,152 @@
+.allaboutblock-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  min-height: 500px;
+  background-color: #f7941d;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.allaboutblock-container.reverse {
+  flex-direction: row-reverse;
+  background-color: #1B2A47;
+  color: #fff;
+}
+
+.allaboutblock-container.reverse .allaboutblock-line {
+  background-color: #fff;
+}
+
+/* Left / Image Section */
+.allaboutblock-left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.allaboutblock-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Right / Content Section */
+.allaboutblock-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+  box-sizing: border-box;
+}
+
+.allaboutblock-subtitle {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.allaboutblock-title {
+  font-size: 38px;
+  font-weight: 400;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.allaboutblock-title span {
+  font-weight: 700;
+}
+
+.allaboutblock-line {
+  width: 50px;
+  height: 3px;
+  background-color: white;
+  margin: 12px 0 24px;
+  border: none;
+}
+
+.allaboutblock-text {
+  font-size: 15px;
+  line-height: 1.7;
+  text-align: justify;
+  margin-bottom: 24px;
+}
+
+.allaboutblock-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 24px;
+}
+
+.allaboutblock-list li {
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+/* Tablet Responsive */
+@media (max-width: 1024px) {
+  .allaboutblock-container,
+  .allaboutblock-container.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .allaboutblock-left,
+  .allaboutblock-right {
+    width: 100%;
+  }
+
+  .allaboutblock-left img {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .allaboutblock-right {
+    padding: 40px;
+  }
+
+  .allaboutblock-title {
+    font-size: 30px;
+  }
+
+  .allaboutblock-text,
+  .allaboutblock-list li {
+    font-size: 14px;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .allaboutblock-right {
+    padding: 24px;
+  }
+
+  .allaboutblock-title {
+    font-size: 24px;
+  }
+
+  .allaboutblock-subtitle {
+    font-size: 11px;
+  }
+
+  .allaboutblock-text,
+  .allaboutblock-list li {
+    font-size: 13px;
+  }
+
+  .allaboutblock-line {
+    width: 40px;
+    height: 2px;
+  }
+}

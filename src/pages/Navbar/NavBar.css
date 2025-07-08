@@ -1,9 +1,8 @@
 :root {
     --black: #000000;
-    --red: hsl(22, 100%, 40%);
-    --white: white;
-    /* --transparent-white: rgba(255, 255, 255, 0.9); */
-   
+    --red: #cc0200;
+    --white: #ffffff;
+    --transparent-white: rgba(255, 255, 255, 0.9);
   }
   
   /* Default NavBar styling */
@@ -13,8 +12,6 @@
     justify-content: space-between;
     padding: 0 30px;
     background-color: transparent;
-    /* background-color: white; */
-  
     position: -webkit-sticky; /* For Safari */
     position: sticky;
     top: 0; /* Stick to the top */
@@ -25,34 +22,34 @@
   
   /* Transparent state for navbar text and icons */
   .NavBarContainer.transparent {
-    /* background-color: transparent; */
-     background-color: white;
+    background-color: transparent;
     box-shadow: none; /* No shadow when transparent */
   }
   
   .NavBarContainer.transparent .NavBarLink,
   .NavBarContainer.transparent .IconLink {
-    color:black; /* Text and icons are white when transparent */
+    color: var(--white); /* Text and icons are white when transparent */
   }
   
   .NavBarContainer.transparent .NavBarLink::after {
     background-color: var(--white); /* White underline when transparent */
   }
   
-  /* Scrolled state with white background and black text/icons */
-  .NavBarContainer.scrolled {
-    background-color: var(--white);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Apply box-shadow after scroll */
-  }
-  
-  .NavBarContainer.scrolled .NavBarLink,
-  .NavBarContainer.scrolled .IconLink {
-    color: var(--black); /* Text and icons are black when scrolled */
-  }
-  
-  .NavBarContainer.scrolled .NavBarLink::after {
-    background-color: var(--red); /* Red underline when scrolled */
-  }
+.NavBarContainer.scrolled {
+  background-color: var(--white) !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+.NavBarContainer.scrolled .NavBarLink,
+.NavBarContainer.scrolled .IconLink {
+  color: var(--black) !important;
+}
+
+.NavBarContainer.scrolled .NavBarLink::after {
+  background-color: var(--red) !important;
+}
+
+
   
   /* White background for all other pages */
   .NavBarContainer.white-background {
@@ -163,12 +160,18 @@
     position: relative;
     cursor: pointer;
   }
+
+  /* Only apply black by default, not overriding .scrolled/.transparent */
+.NavBarContainer.white-background .NavBarLink,
+.NavBarContainer.white-background .SubMenuLink {
+  color: var(--black);
+}
+
   
   .NavBarLink,
   .SubMenuLink {
     text-decoration: none;
     text-transform: uppercase;
-    color: var(--black);
     font-size: 14px;
     font-weight: 600;
     position: relative;
@@ -205,30 +208,88 @@
     transform-origin: left;
   }
   
-  /* SubMenu styling */
-  .SubMenuList {
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden; /* Hide content that overflows */
-    position: absolute;
-    top: 4rem;
-    left: 0;
-    background-color: var(--white);
-    padding: 0;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    transition: opacity 0.8s ease, max-height 0.8s ease;
-    min-width: 150px; /* Minimum width for the submenu */
-  }
-  
-  .SubMenuList.show {
-    opacity: 1;
-    max-height: 300px; /* Adjust to fit your content */
-    padding: 10px 0; /* Add padding when visible */
-  }
-  
-  .SubMenuItem {
-    padding: 15px 50px;
-    position: relative; /* Required for the underline effect */
-  }
-  
+/* SubMenu styling */
+.SubMenuList {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  position: absolute;
+  top:3rem;
+  left: -3rem;
+  background-color: var(--white);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  min-width: 220px;
+  border-radius: 4px;
+  transform: translateY(10px);
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease,
+    max-height 0.4s ease;
+  pointer-events: none;
+  padding: 0;
+}
+
+/* Show submenu with smooth animation */
+.SubMenuList.show {
+  opacity: 1;
+  max-height: 500px;
+  transform: translateY(0);
+  pointer-events: auto;
+  padding: 8px 0;
+}
+
+
+
+/* Each item in submenu */
+.SubMenuItem {
+  padding: 10px 16px;
+  transition: background-color 0.3s ease;
+  white-space: normal; /* ✅ Allow multi-line items */
+}
+
+/* Hover background */
+.SubMenuItem:hover {
+  background-color: rgba(204, 2, 0, 0.05); /* Soft red hover */
+}
+
+/* Link inside submenu */
+.SubMenuLink {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--black);
+  text-transform: capitalize;
+  position: relative;
+  line-height: 1.5;
+  white-space: normal; /* ✅ Wrap text */
+  word-break: break-word;
+}
+
+/* Hover and active color */
+.SubMenuLink:hover,
+.SubMenuLink.active {
+  color: var(--red);
+}
+
+/* Animated underline */
+.SubMenuLink::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--red);
+  left: 0;
+  bottom: -4px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+/* Show underline on hover or active */
+.SubMenuLink:hover::after,
+.SubMenuLink.active::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}

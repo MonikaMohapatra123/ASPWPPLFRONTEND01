@@ -2,8 +2,7 @@ import React from "react";
 import data from "../../json/data.json";
 import "./Leadership.css";
 
-const Leadership = () => {
-  const directors = data["15"].team;
+const Leadership = ({directors}) => {
 
   return (
     <div className="directors-container">

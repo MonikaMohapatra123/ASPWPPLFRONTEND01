@@ -1,0 +1,35 @@
+.breadcrumb-trail {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  display: inline-block;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.4);
+}
+
+
+.breadcrumb-link,
+.breadcrumb-link:visited,
+.breadcrumb-link:active {
+  color: #f16522 !important;
+  font-size: 30px !important;
+  text-decoration: none !important;
+}
+
+.breadcrumb-link:hover {
+  text-decoration: underline;
+  color: #ffffff !important;
+}
+
+
+.breadcrumb-current {
+  color: #fff;
+  font-weight: 600;
+  font-size: 30px;
+  cursor: default;
+}

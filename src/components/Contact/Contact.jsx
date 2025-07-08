@@ -1,17 +1,44 @@
 import React from "react";
-import "./Contact.css"; // Import the CSS file
+import "./Contact.css";
 
-const Contact = () => {
+const Contact = ({ title, fields, button, image }) => {
   return (
-    <div className="contact-container">
-      <div className="form-box">
-        <h2>Stay in Touch</h2>
-        <form>
-          <input type="text" placeholder="Name*" required />
-          <input type="email" placeholder="E-mail*" required />
-          <input type="tel" placeholder="Phone*" required />
-          <textarea placeholder="Details" rows="4"></textarea>
-          <button type="submit">SEND MESSAGE</button>
+    <div
+      className="contact-container"
+      style={{
+        backgroundImage: `url(${image})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className="contact-form-box">
+        <h2 className="contact-title">{title}</h2>
+        <form className="contact-form">
+          {fields.map((field, index) =>
+            field.type === "textarea" ? (
+              <textarea
+                key={index}
+                name={field.name}
+                placeholder={field.placeholder}
+                rows="4"
+                required={field.required}
+                className="contact-textarea"
+              />
+            ) : (
+              <input
+                key={index}
+                type={field.type}
+                name={field.name}
+                placeholder={field.placeholder}
+                required={field.required}
+                className="contact-input"
+              />
+            )
+          )}
+
+          <button type="submit" className="contact-submit-button">
+            {button}
+          </button>
         </form>
       </div>
     </div>

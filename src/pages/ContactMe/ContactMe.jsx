@@ -1,17 +1,29 @@
-import React from 'react'
-import Contact from '../../components/Contact/Contact'
-import CompanyIntro from '../../AllCompanyContactIntro/CompanyIntro'
-import ContactSection from '../../AllComapanyContact/AllCompanyContact'
-
+import React, { useState, useEffect } from 'react';
+import ContactSection from '../../components/AllComapanyContact/AllCompanyContact';
+import AllIntroTemplate from '../../components/AllIntroTemplate/AllIntroTemplate';
+import { getStoredData } from '../../json/fetchData';
+import Loader from '../../components/Loader/Loader';
 
 const ContactMe = () => {
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    const stored = getStoredData();
+    setData(stored["5"]);
+  }, []);
+
+  if (!data) return <Loader />;
+
+  // console.log(data);
+
+  
+
   return (
     <div>
-         <CompanyIntro/>
-         <ContactSection/>
-         <Contact/>
+      <AllIntroTemplate title={data.Introsubtitle} image={data.Introimage} />
+      <ContactSection office={data.offices} fields={data.contactFormFields} Api={"https://aspwppl-backend.vercel.app/form"}/>
     </div>
-  )
-}
+  );
+};
 
-export default ContactMe
+export default ContactMe;

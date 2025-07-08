@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 // import React from 'react';
 // import data from '../../json/data.json';
@@ -93,3 +94,66 @@ export default AllCompanyProject;
 
 
 
+=======
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+import './AllCompanyProject.css';
+import Button from '../Button/Button';
+
+const AllCompanyProject = ({ title, heading, image, services = [], button }) => {
+  return (
+    <section className="allcompanyproject-container">
+
+            <div className="allcompanyproject-right">
+        {image && (
+          <img
+            src={image}
+            alt="ASP Project Highlight"
+            className="allcompanyproject-image"
+            loading="lazy"
+          />
+        )}
+      </div>
+      <div className="allcompanyproject-left">
+        {title && <h4>{title}</h4>}
+        {heading && (
+          <h1>
+            <span className="allcompanyproject-bold">EPCC</span> {heading}
+          </h1>
+        )}
+
+        <div className="allcompanyproject-underline" />
+
+        {services.length > 0 ? (
+          <ul className="allcompanyproject-services-list">
+            {services.map((item, index) => (
+              <li key={index}>▣ {item}</li>
+            ))}
+          </ul>
+        ) : (
+          <p>No services listed.</p>
+        )}
+
+        {button && (
+          <Link to="/projects">
+            <Button text={button} />
+          </Link>
+        )}
+      </div>
+
+
+    </section>
+  );
+};
+
+AllCompanyProject.propTypes = {
+  title: PropTypes.string,
+  heading: PropTypes.string,
+  image: PropTypes.string,
+  services: PropTypes.arrayOf(PropTypes.string),
+  button: PropTypes.string
+};
+
+export default AllCompanyProject;
+>>>>>>> 103ce2c (WIP: Save progress before rebase)
