@@ -3,7 +3,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px; /* Positive value for spacing between cards */
-  width: 90%;
+  width: 100%;
   background-color: #f8fbfd;
 }
 

@@ -1,0 +1,81 @@
+.project-details-pd {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #f8fbfd;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+   font-family: 'Roboto', sans-serif;
+  color: #2b2b2b;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.pd-title {
+  font-size: 2.2rem;
+  color: #294a63;
+  margin-bottom: 20px;
+  border-left: 5px solid #294a63;
+  padding-left: 12px;
+}
+
+.pd-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.pd-info p {
+  font-size: 1rem;
+  margin: 6px 0;
+  color: #333;
+}
+
+.pd-images {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.pd-image {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.pd-image:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.loading-text {
+  text-align: center;
+  padding: 60px;
+  font-size: 1.3rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .pd-images {
+    justify-content: center;
+  }
+
+  .pd-image {
+    width: 90%;
+  }
+
+  .pd-title {
+    font-size: 1.6rem;
+  }
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

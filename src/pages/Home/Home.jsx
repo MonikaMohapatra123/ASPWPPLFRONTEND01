@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { getStoredData } from "../../json/fetchData";
 import AllCompanyIntro from "../../components/AllCompanyIntro/AllCompanyIntro";
 import AllCompanyProject from "../../components/AllCompanyProject/AllCompanyProject";
-import AllCompanyNuclear from "../../components/AllCompanyNuclear/AllCompanyNuclear";
 import AllCompanyClient from "../../components/AllCompanyClient/AllCompanyclient";
 import Contact from "../../components/Contact/Contact";
 import AllcompanyCarousel from "../../components/AllCompanyCarousel/AllcompanyCarousel";

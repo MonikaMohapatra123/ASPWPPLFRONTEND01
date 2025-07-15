@@ -3,7 +3,6 @@ import AllIntroTemplate from '../../components/AllIntroTemplate/AllIntroTemplate
 import AllProjects from '../../components/AllProjects/AllProjects';
 import Loader from "../../components/Loader/Loader";
 import { getStoredData } from "../../json/fetchData";
-
 const Project = () => {
   const [data, setData] = useState(null);
   const [projectData, setProjectData] = useState(null);
@@ -40,3 +39,7 @@ const Project = () => {
 };
 
 export default Project;
+
+
+
+

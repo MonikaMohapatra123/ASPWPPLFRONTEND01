@@ -1,12 +1,10 @@
-<<<<<<< HEAD
-
 .allcompanyproject-container {
   display: flex;
   min-height: 100vh;
-  font-family: 'Segoe UI', sans-serif;
   width: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .allcompanyproject-left {
   background-color: #f26522;
   color: white;
@@ -17,25 +15,30 @@
   justify-content: center;
   align-items: center;
 }
+
 .allcompanyproject-left h4 {
   font-size: 1rem;
   font-weight: 700;
   margin-bottom: 10px;
 }
+
 .allcompanyproject-left h1 {
   font-size: 3rem;
   font-weight: 300;
   margin-bottom: 10px;
 }
+
 .allcompanyproject-bold {
   font-weight: 700;
 }
+
 .allcompanyproject-underline {
   width: 60px;
   height: 3px;
   background-color: white;
   margin: 15px 0;
 }
+
 .allcompanyproject-services-list {
   list-style: none;
   padding-left: 0;
@@ -43,88 +46,65 @@
   font-size: 1rem;
   font-weight: 600;
 }
+
 .allcompanyproject-services-list li {
   margin-bottom: 10px;
 }
 
-
 .allcompanyproject-right {
   width: 50%;
 }
+
 .allcompanyproject-right img {
-  width:100%;
+  width: 100%;
   height: 100%;
-} 
-/* responsive design */
-/* Tablet (max-width: 768px) and Mobile (max-width: 480px) */
+  object-fit: cover;
+}
+
+/* ✅ Tablet & below */
 @media (max-width: 768px) {
   .allcompanyproject-container {
     flex-direction: column;
   }
+
   .allcompanyproject-left,
   .allcompanyproject-right {
     width: 100%;
     padding: 2rem;
+    align-items: center;
+    text-align: center;
   }
+
   .allcompanyproject-left h1 {
     font-size: 2rem;
   }
-  .allcompanyproject-button {
-    font-size: 0.95rem;
-    padding: 0.8rem 1.5rem;
-    max-width: 100%;
+
+  .allcompanyproject-left h4 {
+    font-size: 1rem;
   }
+
+  .allcompanyproject-services-list {
+    font-size: 0.95rem;
+  }
+
+  .allcompanyproject-services-list li {
+    margin-bottom: 8px;
+  }
+
   .allcompanyproject-right img {
     width: 100%;
     height: auto;
   }
 }
+
+/* ✅ Mobile only */
 @media (max-width: 480px) {
   .allcompanyproject-left {
     padding: 1.5rem 1rem;
   }
+
   .allcompanyproject-left h1 {
     font-size: 1.5rem;
-  }
-  .allcompanyproject-left h4 {
-    font-size: 0.95rem;
-  }
-  .allcompanyproject-services-list {
-    font-size: 0.9rem;
-  }
-  .allcompanyproject-button {
-    font-size: 0.9rem;
-    padding: 0.7rem 1rem;
-  }
-
-.allcompanyproject-services-list{
-    text-align: justify;
-}
-
-}
-
-
-
-
- @media (max-width: 480px) {
-  .allcompanyproject-container {
-    flex-direction: column;
-  }
-
-  .allcompanyproject-left,
-  .allcompanyproject-right {
-    width: 90%;
-    padding: 1rem;
-  }
-
-  .allcompanyproject-left {
-    padding: 1rem;
-    text-align: center;
-    align-items: center;
-  }
-
-  .allcompanyproject-left h1 {
-    font-size: 1.4rem;
   }
 
   .allcompanyproject-left h4 {
@@ -133,161 +113,20 @@
 
   .allcompanyproject-services-list {
     font-size: 0.85rem;
-    padding-left: 0;
+    text-align: justify;
   }
 
   .allcompanyproject-services-list li {
     margin-bottom: 8px;
   }
 
-  .allcompanyproject-button {
-    font-size: 0.9rem;
-    padding: 0.7rem 1rem;
-    max-width: 100%;
+  .allcompanyproject-right {
+    padding: 0 1rem;
   }
 
   .allcompanyproject-right img {
     width: 100%;
     height: auto;
     display: block;
-    object-fit: cover;
-  }
-} 
-
-
-
-=======
-
-.allcompanyproject-container {
-  display: flex;
-  min-height: 500px;
-  font-family: 'Segoe UI', sans-serif;
-  width: auto;
-}
-.allcompanyproject-left {
-  background-color: #f26522;
-  color: white;
-  padding: 4rem 3rem;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.allcompanyproject-left h4 {
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-.allcompanyproject-left h1 {
-  font-size: 2rem;
-  font-weight: 300;
-  margin-bottom: 10px;
-}
-.allcompanyproject-bold {
-  font-weight: 700;
-}
-.allcompanyproject-underline {
-  width: 60px;
-  height: 3px;
-  background-color: white;
-  margin: 15px 0;
-}
-.allcompanyproject-services-list {
-  list-style: none;
-  padding-left: 0;
-  margin: 2rem 0;
-  font-size: 1rem;
-  font-weight: 600;
-}
-.allcompanyproject-services-list li {
-  margin-bottom: 10px;
-}
-
-
-.allcompanyproject-right {
-  width: 50%;
-}
-.allcompanyproject-right img {
-  width:100%;
-  height: 100%;
-} 
-
-
-/* Tablet & below */
-@media (max-width: 768px) {
-  .allcompanyproject-container {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .allcompanyproject-left,
-  .allcompanyproject-right {
-    width: 100%;
-    padding: 2rem;
-    align-items: center;
-    text-align: center;
-  }
-
-  .allcompanyproject-left h1 {
-    font-size: 1.75rem;
-  }
-
-  .allcompanyproject-left h4 {
-    font-size: 1rem;
-  }
-
-  .allcompanyproject-services-list {
-    font-size: 0.95rem;
-  }
-
-  .allcompanyproject-services-list li {
-    margin-bottom: 8px;
-  }
-
-  .allcompanyproject-right img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
   }
 }
-
-/* Mobile only */
-@media (max-width: 480px) {
-  .allcompanyproject{
-    width: 100%;
-
-  }
-  .allcompanyproject-left {
-    padding: 1.5rem 0rem;
-  }
-
-  .allcompanyproject-left h1 {
-    font-size: 1.5rem;
-  }
-
-  .allcompanyproject-left h4 {
-    font-size: 1rem;
-  }
-
-  .allcompanyproject-services-list {
-    font-size: 0.95rem;
-    text-align: left;
-  }
-
-  .allcompanyproject-button {
-    font-size: 0.9rem;
-    padding: 0.7rem 1rem;
-    width: 100%;
-  }
-
-  .allcompanyproject-right {
-    padding: 0;
-  }
-
-  .allcompanyproject-right img {
-    width: 100%;
-    height: auto;
-  }
-}
->>>>>>> 103ce2c (WIP: Save progress before rebase)

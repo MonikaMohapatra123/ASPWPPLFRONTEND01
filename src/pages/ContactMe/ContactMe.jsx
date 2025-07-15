@@ -3,6 +3,7 @@ import ContactSection from '../../components/AllComapanyContact/AllCompanyContac
 import AllIntroTemplate from '../../components/AllIntroTemplate/AllIntroTemplate';
 import { getStoredData } from '../../json/fetchData';
 import Loader from '../../components/Loader/Loader';
+import OurPresence from '../../components/OurPresence/OurPresence';
 
 const ContactMe = () => {
   const [data, setData] = useState(null);
@@ -22,6 +23,7 @@ const ContactMe = () => {
     <div>
       <AllIntroTemplate title={data.Introsubtitle} image={data.Introimage} />
       <ContactSection office={data.offices} fields={data.contactFormFields} Api={"https://aspwppl-backend.vercel.app/form"}/>
+      <OurPresence/>
     </div>
   );
 };

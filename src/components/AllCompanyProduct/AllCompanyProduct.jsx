@@ -10,7 +10,6 @@ export default function AllCompanyProduct({
   buttonText,
   imagesSlider
 }) {
-
   return (
     <div className="allcompanyproduct-container">
       {/* Left Section - Image */}

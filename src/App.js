@@ -11,14 +11,6 @@ import Contact from "./components/Contact/Contact";
 import Project from "./pages/Project/Project";
 import ContactMe from "./pages/ContactMe/ContactMe";
 
-import FirstProject from "./components/FirstProject/FirstProject";
-import SecondProject from "./components/SecondProject/SecondProject";
-import ThirdProject from "./components/ThirdProject/ThirdProject";
-
-import FirstService from "./components/FirstService/FirstService";
-import SecondService from "./components/SecondService/SecondService";
-import ThirdService from "./components/ThirdService/ThirdService";
-
 import Admin from "./pages/Admin/Admin";
 import AdminProjects from "./pages/AdminProjects/AdminProjects";
 import AdminActivities from "./pages/AdminActivities/AdminActivities";
@@ -40,6 +32,9 @@ import PrivateRoute from "./pages/PrivateRoute/PrivateRoute";
 import NotFound from "./pages/NotFound/NotFound"; // optional
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ProjectDetails from "./pages/ProjectDetails/ProjectDetails";
+import ServiceDetails from "./pages/ServiceDetails/ServiceDetails";
+
 // Layouts
 const PublicLayout = ({ children }) => (
   <>
@@ -97,15 +92,18 @@ const App = () => {
             </PublicLayout>
           }
         />
-        <Route
+       <Route
           path="/projects/:id"
           element={
             <PublicLayout>
               <Project />
             </PublicLayout>
           }
-        />
-       
+        /> 
+
+
+      
+    
 
         {/* Login Route */}
         <Route path="/login" element={<Login />} />
