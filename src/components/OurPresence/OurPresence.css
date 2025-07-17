@@ -1,191 +1,175 @@
+
 .OurPresence-Container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between; /* Adjust spacing between the sections */
-    background-color: #fff;
-    border-radius: 10px;
-  }
-  
-  .OurPresence-mapSection {
-    position: relative;
-    flex: 0 0 40%; /* Takes up 40% of the container width */
-  }
-  
-  .OurPresence-mapImage {
-    max-width: 100%; /* Ensure the image scales properly */
-    height: auto;
-    border-radius: 10px;
-  }
-  
-  .tooltip {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    border-radius: 4px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    white-space: nowrap; /* Prevent text from wrapping */
-    pointer-events: none; /* Ensure tooltip doesn't interfere with mouse events */
-    z-index: 1000; /* Ensure the tooltip is above other content */
-    max-width: 200px; /* Set a max width to prevent overly wide tooltips */
-  }
-  
-  .svg-tooltip {
-    display: block;
-  }
-  
-  .OurPresence-ContentSection {
-    position: relative; /* Needed to position the SVG absolutely within this container */
-    flex: 0 0 60%; /* Takes up the remaining 60% of the container width */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 40px;
+  overflow-x: hidden; /* Prevent right side cutoff */
+}
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center items vertically */
-    align-items: center; /* Center items horizontally */
-    height: 800px; /* Ensure the container has height */
-    overflow: hidden; /* Ensure content does not overflow */
-  }
-  
-  .background-svg {
-    position: absolute;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    width: 1700px; /* Ensure SVG covers the width of the container */
-    height: 1700px; /* Ensure SVG covers the height of the container */
-    transform: translate(-38%, -50%); /* Center SVG based on its own dimensions */
-    z-index: 1; /* Ensure SVG is behind the content */
-    opacity: 1; /* Adjust opacity if needed */
-  }
+.OurPresence-mapSection {
+  position: relative;
+  flex: 0 0 40%;
+  overflow: hidden;
+}
 
-  .background-svg2{
-    position: absolute;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    width: 1700px; /* Ensure SVG covers the width of the container */
-    height: 1700px; /* Ensure SVG covers the height of the container */
-    transform: translate(-43%, -50%); /* Center SVG based on its own dimensions */
-    z-index: 1; /* Ensure SVG is behind the content */
-    opacity: 1; /* Adjust opacity if needed */
-  }
-  
-  .OurPresence-Header {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    color: #fff;
-    position: relative; /* Ensure text is above SVG */
-    z-index: 3; /* Ensure text is above SVG */
-    text-align: right; /* Align text to the left */
-    width: 100%; /* Ensure header takes full width for alignment */
-    max-width: 700px; /* Optional: Set a max-width if needed */
-  }
-  
-  .OurPresence-description {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    color: #fff;
-    position: relative; /* Ensure text is above SVG */
-    z-index: 3; /* Ensure text is above SVG */
-    text-align: right; /* Align text to the left */
-    width: 100%; /* Ensure description takes full width for alignment */
-    max-width: 700px; /* Optional: Set a max-width if needed */
-    font-weight: 300;
-  }
-  .Button-OurPresence{
-    z-index: 5;
-  }
-  
-  /* Responsive styles for screens between 1500px and 800px */
+.OurPresence-mapImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.tooltip {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 1000;
+  max-width: 200px;
+  display: none;
+}
+
+.OurPresence-ContentSection {
+  position: relative;
+  flex: 0 0 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.background-svg,
+.background-svg2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1700px;
+  height: 1700px;
+  transform: translate(-38%, -50%);
+  z-index: 1;
+  opacity: 1;
+}
+
+.background-svg2 {
+  transform: translate(-43%, -50%);
+}
+
+.OurPresence-Header {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  position: relative;
+  z-index: 3;
+  text-align: right;
+  width: 100%;
+  max-width: 700px;
+}
+
+.OurPresence-description {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #fff;
+  position: relative;
+  z-index: 3;
+  text-align: right;
+  width: 100%;
+  max-width: 700px;
+  font-weight: 300;
+}
+
+.Button-OurPresence {
+  z-index: 5;
+}
+
 @media (max-width: 1500px) and (min-width: 801px) {
-
   .OurPresence-ContentSection {
-    height: 700px; /* Adjust height if needed */
+    height: 700px;
   }
 
-  .background-svg {
-    width: 1500px; /* Scale SVG width for medium-large screens */
-    height: 1500px; /* Scale SVG height for medium-large screens */
-    transform: translate(-25%, -50%); /* Adjust translation for scaling */
-  }
-
+  .background-svg,
   .background-svg2 {
-    width: 1500px; /* Scale SVG width for medium-large screens */
-    height: 1500px; /* Scale SVG height for medium-large screens */
-    transform: translate(-30%, -50%); /* Adjust translation for scaling */
+    width: 1500px;
+    height: 1500px;
+    transform: translate(-30%, -50%);
   }
 
   .OurPresence-Header {
-    font-size: 1.8rem; /* Slightly smaller font size */
+    font-size: 1.8rem;
   }
 
   .OurPresence-description {
-    font-size: 0.8rem; /* Slightly smaller font size */
-padding-left: 120px;
-padding-right: 20px;
+    font-size: 0.8rem;
+    padding-left: 120px;
+    padding-right: 20px;
   }
 }
 
-  /* Styles for screens with a maximum width of 786px */
 @media (max-width: 786px) {
   .OurPresence-Container {
-    flex-direction: column; /* Stack sections vertically */
-    align-items: center; /* Center items horizontally */
-    
+    flex-direction: column;
+    align-items: center;
   }
 
   .OurPresence-mapSection {
-    flex: 1 0 auto; /* Allow the map section to take up available space */
-    margin-bottom: 40px; /* Add some space below the map section */
+    flex: 1 0 auto;
+    margin-bottom: 40px;
   }
 
   .OurPresence-mapImage {
-    width: 100%; /* Ensure the image scales properly */
+    width: 100%;
     height: 500px;
   }
 
   .OurPresence-ContentSection {
-    flex: 1 0 auto; /* Allow the content section to take up available space */
-    height: auto; /* Allow the height to adjust based on content */
-    padding: 20px; /* Add padding for better spacing */
-    align-items: flex-start; /* Align items to the start */
-    background-color: var(--primary-color);
+    flex: 1 0 auto;
+    height: auto;
+    padding: 20px;
+    align-items: flex-start;
+    /* background-color: var(--primary-color); */
+    background-color: var(--text-color);
   }
 
-  .background-svg  {
-    display: none;
-  }
-
-  .background-svg2{
+  .background-svg,
+  .background-svg2 {
     display: none;
   }
 
   .OurPresence-Header,
   .OurPresence-description {
-    text-align: left; /* Center text */
-    width: 100%; /* Ensure text takes full width for alignment */
-    max-width: none; /* Remove the max-width constraint */
-    margin: 0 auto; /* Center align text */
+    text-align: left;
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
     color: #fff;
   }
 
   .OurPresence-Header {
-    font-size: 1.5rem; /* Adjust font size for smaller screens */
-    margin-bottom: 15px; /* Adjust margin for spacing */
+    font-size: 1.5rem;
+    margin-bottom: 15px;
   }
 
   .OurPresence-description {
-    font-size: 1rem; /* Adjust font size for smaller screens */
+    font-size: 1rem;
     margin-bottom: 20px;
   }
 
-  .Button-OurPresence{
+  .Button-OurPresence {
     display: none;
   }
 }
 
-
-
+/* === Projects Section === */
 .OurPresence-Projects {
   margin-top: 20px;
   background: #f9f9f9;
@@ -193,17 +177,12 @@ padding-right: 20px;
   border-radius: 8px;
   max-height: 400px;
   overflow-y: auto;
+  width: 100%;
+
 }
+
 .OurPresence-Projects img {
   display: inline-block;
-}
-
-
-
-
-
-.OurPresence-ContentSection {
-  padding: 20px;
 }
 
 .OurPresence-ContentSection h2 {
@@ -215,14 +194,20 @@ padding-right: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
+  width: 100%;
 }
 
 .project-card {
   position: relative;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
 }
 
 .project-card:hover {
@@ -232,8 +217,9 @@ padding-right: 20px;
 .project-image-wrapper {
   position: relative;
   width: 100%;
-  height: 200px;
+  height: 180px;
   overflow: hidden;
+  flex-shrink: 0;
 }
 
 .project-image {
@@ -251,7 +237,7 @@ padding-right: 20px;
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   opacity: 0;
   display: flex;
   align-items: center;
@@ -267,5 +253,35 @@ padding-right: 20px;
 
 .project-info {
   padding: 15px;
-  background: #fff;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.project-card.empty-card {
+  background-color: #f0f0f0;
+  box-shadow: none;
+}
+
+/* === SVG State Circles === */
+.state-circle {
+  r: 6;
+  fill: #007bff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  stroke: white;
+  stroke-width: 1;
+}
+
+.state-circle:hover {
+  transform: scale(1.2);
+  fill: #3399ff;
+}
+
+.state-circle.active {
+  fill: #ff6347;
+  stroke: #ff4500;
+  stroke-width: 2;
 }

@@ -32,8 +32,8 @@ import PrivateRoute from "./pages/PrivateRoute/PrivateRoute";
 import NotFound from "./pages/NotFound/NotFound"; // optional
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import ProjectDetails from "./pages/ProjectDetails/ProjectDetails";
-import ServiceDetails from "./pages/ServiceDetails/ServiceDetails";
+import Leadership from "./components/Leadership/Leadership";
+import ProjectDetails from "./components/ProjectDetails/ProjectDetails";
 
 // Layouts
 const PublicLayout = ({ children }) => (
@@ -92,15 +92,31 @@ const App = () => {
             </PublicLayout>
           }
         />
-       <Route
+       {/* <Route
           path="/projects/:id"
           element={
             <PublicLayout>
               <Project />
             </PublicLayout>
           }
+        />  */}
+         <Route
+          path="/leadership"
+          element={
+            <PublicLayout>
+               <Leadership/>
+            </PublicLayout>
+          }
         /> 
 
+      <Route
+          path="/projects/:id"
+          element={
+            <PublicLayout>
+              <ProjectDetails/>
+            </PublicLayout>
+          }
+        /> 
 
       
     

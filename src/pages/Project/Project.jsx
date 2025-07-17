@@ -3,6 +3,7 @@ import AllIntroTemplate from '../../components/AllIntroTemplate/AllIntroTemplate
 import AllProjects from '../../components/AllProjects/AllProjects';
 import Loader from "../../components/Loader/Loader";
 import { getStoredData } from "../../json/fetchData";
+import OurPresence from "../../components/OurPresence/OurPresence";
 const Project = () => {
   const [data, setData] = useState(null);
   const [projectData, setProjectData] = useState(null);
@@ -34,6 +35,7 @@ const Project = () => {
     <div>
       <AllIntroTemplate title={Data.Introsubtitle} image={Data.Introimage} />
       <AllProjects project={projectData} />
+      <OurPresence/>
     </div>
   );
 };

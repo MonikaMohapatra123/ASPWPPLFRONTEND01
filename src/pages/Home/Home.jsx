@@ -7,6 +7,7 @@ import Contact from "../../components/Contact/Contact";
 import AllcompanyCarousel from "../../components/AllCompanyCarousel/AllcompanyCarousel";
 import HeroSection from "../../components/Herosection";
 import Loader from "../../components/Loader/Loader"; // ✅ import loader
+
 import AllSectionAbout from "../../components/AllSectionAbout/AllSectionAbout";
 
 export const Home = () => {

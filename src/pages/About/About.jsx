@@ -59,8 +59,8 @@ const About = () => {
         buttonText={Data.productButtonText}
         imagesSlider={Data.imagesSlider}
       />
-
-      <Leadership directors={Data.team} />
+{/* 
+      <Leadership directors={Data.team} /> */}
     </div>
   );
 };

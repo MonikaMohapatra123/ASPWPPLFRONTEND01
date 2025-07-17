@@ -1,25 +1,3 @@
-// import React, { lazy, Suspense } from 'react';
-// import totalData from '../../json/data.json';
-
-
-// // Lazy load the DynamicForm component
-// const DynamicForm = lazy(() => import('../../components/DynamicForm/DynamicForm'));
-
-// const AddActivitiesPage = () => {
-//   const fields = totalData[19].AdminActivities;
-//   const apiUrl = 'https://pranusha.vercel.app/activities';
-//   const successRedirect = '/admin/activities';
-
-//   return (
-//     <div>
-//       <Suspense fallback={<p>Loading form...</p>}>
-//         <DynamicForm fields={fields} apiUrl={apiUrl} successRedirect={successRedirect} />
-//       </Suspense>
-//     </div>
-//   );
-// };
-
-// export default AddActivitiesPage;
 
 
 

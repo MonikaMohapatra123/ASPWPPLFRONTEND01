@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import "./Service.css";
 import AllIntroTemplate from '../../components/AllIntroTemplate/AllIntroTemplate';
 import AllServices from '../../components/AllServices/AllServices';
-import AllServiceDetails from '../../components/AllServiceDetails/AllServiceDetails';
 import Loader from "../../components/Loader/Loader";
 import { getStoredData } from "../../json/fetchData";
 
@@ -38,9 +37,13 @@ const Services = () => {
         image={introData.Introimage} 
       />
       <AllServices service={serviceData} />
-      <AllServiceDetails service={serviceData} />
     </div>
   );
 };
 
 export default Services;
+
+
+
+
+

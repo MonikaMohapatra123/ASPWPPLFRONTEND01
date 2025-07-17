@@ -1,8 +1,8 @@
 .allcompanyproject-container {
   display: flex;
-  min-height: 100vh;
   width: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 500px;
 }
 
 .allcompanyproject-left {
