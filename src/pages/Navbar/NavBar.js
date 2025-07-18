@@ -120,6 +120,7 @@ const ResponsiveNavBar = () => {
           src={getStoredData() && getStoredData()["0"].logo}
           alt="Logo"
           className="LogoImage"
+          
         />
       </Link>
 

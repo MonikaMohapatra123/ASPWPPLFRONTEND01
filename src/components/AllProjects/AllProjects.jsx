@@ -11,6 +11,7 @@ const AllProjects = ({ project }) => {
             src={item.photo?.[0]?.url || "/placeholder.jpg"}
             alt={item.projectsname}
             className="slide-image"
+            loading="lazy"
           />
           <div className="slide-overlay">
             <h3>{item.projectsname}</h3>

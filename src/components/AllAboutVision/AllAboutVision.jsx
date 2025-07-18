@@ -17,7 +17,7 @@ const AllAboutVision = ({ subtitle, title, highlight, description, image }) => {
         <p className="vision-text">{description}</p>
       </div>
       <div className="vision-right">
-        <img src={image} alt={highlight} />
+        <img src={image} alt={highlight}  />
       </div>
     </div>
   );

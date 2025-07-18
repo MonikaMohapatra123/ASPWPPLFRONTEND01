@@ -37,7 +37,7 @@ const AllCompanyNuclear = ({
         <img
           src={image}
           alt={title || "Project Image"}
-          className="nuclear-image"
+          className="nuclear-image" 
         />
       </div>
     </div>

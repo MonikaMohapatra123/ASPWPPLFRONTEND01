@@ -19,7 +19,7 @@ const AllcompanyCarousel = ({ slides = [] }) => {
 
   if (!slides || slides.length === 0) return null;
 
-  const { image, heading, paragraph } = slides[currentIndex];
+  // const { image, heading, paragraph } = slides[currentIndex];
 
   return (
 <div className="carousel-container">
@@ -31,7 +31,7 @@ const AllcompanyCarousel = ({ slides = [] }) => {
   >
     {slides.map((slide, index) => (
       <div className="slide" key={index}>
-        <img src={slide.image} alt={slide.heading || "Slide Image"} />
+        <img src={slide.image} alt={slide.heading || "Slide Image"}  />
         <div className="slide-content">
           <h2>{slide.heading}</h2>
           <p>{slide.paragraph}</p>

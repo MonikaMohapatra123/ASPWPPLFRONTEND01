@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './AllAboutMission.css';
 
 const AllAboutMission = ({ subtitle, title, highlight, description, image }) => {
@@ -9,7 +9,7 @@ const AllAboutMission = ({ subtitle, title, highlight, description, image }) => 
   return (
     <div className="allaboutmission-container">
       <div className="allaboutmission-left">
-        <img src={image} alt={highlight} />
+        <img src={image} alt={highlight}  />
       </div>
       <div className="allaboutmission-right">
         <h5 className="allaboutmission-subtitle">{subtitle}</h5>

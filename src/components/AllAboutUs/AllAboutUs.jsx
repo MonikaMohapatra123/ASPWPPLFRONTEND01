@@ -32,7 +32,7 @@ const AllAboutUs = ({ subtitle, title, description, image }) => {
         className="about-image"
         initial={{ opacity: 0, x: 100 }} // Slide in from right
       >
-        <img src={image} alt="About Us" />
+        <img src={image} alt="About Us"  />
       </motion.div>
     </div>
   );

@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const AllServicesIntro = ({ paragraphText }) => {
   return (
     <div className='AllServices'> 
-        <img src='project-3.jpg' alt='AllServices'/>
+        <img src='project-3.jpg' alt='AllServices' loading="lazy"/>
         <div className='AllServices-para'>
             <p>{paragraphText}</p>
         </div>

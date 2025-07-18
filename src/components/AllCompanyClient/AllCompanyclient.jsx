@@ -33,7 +33,7 @@ const AllCompanyClient = ({ clients = [], title }) => {
               <img
                 src={client.url}
                 alt={client.title || "image"}
-                className="client-logo"
+                className="client-logo" 
               />
             </SwiperSlide>
           ))}

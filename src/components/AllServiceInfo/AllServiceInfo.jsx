@@ -31,7 +31,7 @@ const AllServiceInfo = () => {
 
       <div className="image-gallery">
         {data.images.map((img, index) => (
-          <img key={index} src={img.src} alt={img.alt} />
+          <img key={index} src={img.src} alt={img.alt}  />
         ))}
       </div>
     </div>

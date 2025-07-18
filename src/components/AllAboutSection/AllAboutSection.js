@@ -16,7 +16,7 @@ const AllAboutSection = ({
   return (
     <div className={`about-section-container ${reverse ? 'reverse' : ''}`}>
       <div className="about-section-image">
-        <img src={image} alt={highlight} />
+        <img src={image} alt={highlight}  />
       </div>
       <div className="about-section-text">
         <h5 className="about-subtitle">{subtitle}</h5>

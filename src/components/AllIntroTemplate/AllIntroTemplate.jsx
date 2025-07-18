@@ -5,7 +5,7 @@ import BreadcrumbTrail from "../BreadcrumbTrail/BreadcrumbTrail";
 const AllIntroTemplate = ({ title, image }) => {
   return (
     <div className="AllIntroTemplate">
-  <img src={image} alt="AllIntroTemplate" />
+  <img src={image} alt="AllIntroTemplate"  loading="lazy" decoding="async" />
   <div className="AllIntroTemplate-para">
     <p>{title}</p>
   </div>

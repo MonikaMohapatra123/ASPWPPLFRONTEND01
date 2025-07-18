@@ -1,9 +1,12 @@
-import React, { useEffect, useState } from "react";
-import AllIntroTemplate from '../../components/AllIntroTemplate/AllIntroTemplate';
-import AllProjects from '../../components/AllProjects/AllProjects';
+import React, { useEffect, useState, lazy, Suspense } from "react";
 import Loader from "../../components/Loader/Loader";
 import { getStoredData } from "../../json/fetchData";
-import OurPresence from "../../components/OurPresence/OurPresence";
+
+// ✅ Lazy imports
+const AllIntroTemplate = lazy(() => import("../../components/AllIntroTemplate/AllIntroTemplate"));
+const AllProjects = lazy(() => import("../../components/AllProjects/AllProjects"));
+const OurPresence = lazy(() => import("../../components/OurPresence/OurPresence"));
+
 const Project = () => {
   const [data, setData] = useState(null);
   const [projectData, setProjectData] = useState(null);
@@ -11,11 +14,9 @@ const Project = () => {
   useEffect(() => {
     const loadData = async () => {
       try {
-        // Load local static data
         const stored = getStoredData();
         setData(stored);
 
-        // Fetch dynamic project data
         const response = await fetch("https://aspwppl-backend.vercel.app/projects");
         const result = await response.json();
         setProjectData(result);
@@ -29,19 +30,17 @@ const Project = () => {
 
   if (!data || !projectData) return <Loader />;
 
-  const Data = data["3"]; // Assuming this is the key for intro content
+  const Data = data["3"];
 
   return (
-    <div>
-      <AllIntroTemplate title={Data.Introsubtitle} image={Data.Introimage} />
-      <AllProjects project={projectData} />
-      <OurPresence/>
-    </div>
+    <Suspense fallback={<Loader />}>
+      <div>
+        <AllIntroTemplate title={Data.Introsubtitle} image={Data.Introimage} />
+        <AllProjects project={projectData} />
+        <OurPresence />
+      </div>
+    </Suspense>
   );
 };
 
 export default Project;
-
-
-
-

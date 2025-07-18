@@ -18,6 +18,7 @@ export default function AllCompanyProduct({
           src={image}
           alt="Product Visual"
           className="allcompanyproductfacility-image"
+          loading="lazy"
         />
       </div>
 

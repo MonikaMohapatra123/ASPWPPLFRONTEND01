@@ -1,39 +1,42 @@
-import React from "react";
+
+import React, { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import NavBar from "./pages/Navbar/NavBar";
 import Footer from "./pages/Footer/Footer";
-import { Home } from "./pages/Home/Home";
-import About from "./pages/About/About";
-import Services from "./pages/Service/Services";
-import Contact from "./components/Contact/Contact";
-import Project from "./pages/Project/Project";
-import ContactMe from "./pages/ContactMe/ContactMe";
-
-import Admin from "./pages/Admin/Admin";
-import AdminProjects from "./pages/AdminProjects/AdminProjects";
-import AdminActivities from "./pages/AdminActivities/AdminActivities";
-import AdminNews from "./pages/AdminNews/AdminNews";
-import AdminHiring from "./pages/AdminHiring/AdminHiring";
-import AdminSubmission from "./pages/AdminSubmission/AdminSubmission";
-import AddProjectsPage from "./pages/AddProjectsPage/AddProjectsPage";
-import AddActivitiesPage from "./pages/AddActivitiesPage/AddActivitiesPage";
-import AddNewsPage from "./pages/AddNewsPage/AddNewsPage";
-import AddHiringPage from "./pages/AddHiringPage/AddHiringPage";
-import AdminEditProductPage from "./pages/EditProjectsPage/EditProjectsPage";
-import EditServicesPage from "./pages/EditServicesPage/EditServicesPage";
-import EditHiringPage from "./pages/EditHiringPage/EditHiringPage";
-import EditNewsPage from "./pages/EditNewsPage/EditNewsPage";
-import EditSubmissionPage from "./pages/EditSubmissionPage/EditSubmissionPage";
-
-import Login from "./pages/Login/Login";
+import Loader from "./components/Loader/Loader";
 import PrivateRoute from "./pages/PrivateRoute/PrivateRoute";
-import NotFound from "./pages/NotFound/NotFound"; // optional
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import Leadership from "./components/Leadership/Leadership";
-import ProjectDetails from "./components/ProjectDetails/ProjectDetails";
+
+// Lazy-loaded Public Pages
+const Home = lazy(() => import("./pages/Home/Home"));
+const About = lazy(() => import("./pages/About/About"));
+const Services = lazy(() => import("./pages/Service/Services"));
+const Contact = lazy(() => import("./pages/ContactMe/ContactMe"));
+const Project = lazy(() => import("./pages/Project/Project"));
+const Leadership = lazy(() => import("./components/Leadership/Leadership"));
+const ProjectDetails = lazy(() => import("./components/ProjectDetails/ProjectDetails"));
+const NotFound = lazy(() => import("./pages/NotFound/NotFound"));
+
+// Lazy-loaded Admin Pages
+const Login = lazy(() => import("./pages/Login/Login"));
+const Admin = lazy(() => import("./pages/Admin/Admin"));
+const AdminProjects = lazy(() => import("./pages/AdminProjects/AdminProjects"));
+const AdminActivities = lazy(() => import("./pages/AdminActivities/AdminActivities"));
+const AdminNews = lazy(() => import("./pages/AdminNews/AdminNews"));
+const AdminHiring = lazy(() => import("./pages/AdminHiring/AdminHiring"));
+const AdminSubmission = lazy(() => import("./pages/AdminSubmission/AdminSubmission"));
+const AddProjectsPage = lazy(() => import("./pages/AddProjectsPage/AddProjectsPage"));
+const AddActivitiesPage = lazy(() => import("./pages/AddActivitiesPage/AddActivitiesPage"));
+const AddNewsPage = lazy(() => import("./pages/AddNewsPage/AddNewsPage"));
+const AddHiringPage = lazy(() => import("./pages/AddHiringPage/AddHiringPage"));
+const AdminEditProductPage = lazy(() => import("./pages/EditProjectsPage/EditProjectsPage"));
+const EditServicesPage = lazy(() => import("./pages/EditServicesPage/EditServicesPage"));
+const EditHiringPage = lazy(() => import("./pages/EditHiringPage/EditHiringPage"));
+const EditNewsPage = lazy(() => import("./pages/EditNewsPage/EditNewsPage"));
+const EditSubmissionPage = lazy(() => import("./pages/EditSubmissionPage/EditSubmissionPage"));
 
 // Layouts
 const PublicLayout = ({ children }) => (
@@ -44,248 +47,52 @@ const PublicLayout = ({ children }) => (
   </>
 );
 
-const PrivateLayout = ({ children }) => <>{children}</>;
+const PrivateLayout = ({ children }) => children;
 
 const App = () => {
-  <ToastContainer position="top-right" autoClose={3000} />
   return (
+    <>
+      <ToastContainer position="top-right" autoClose={3000} />
+      <Suspense fallback={<Loader />}>
+        <Routes>
+          {/* Public Routes */}
+          <Route path="/" element={<PublicLayout><Home /></PublicLayout>} />
+          <Route path="/about" element={<PublicLayout><About /></PublicLayout>} />
+          <Route path="/services" element={<PublicLayout><Services /></PublicLayout>} />
+          <Route path="/contact" element={<PublicLayout><Contact /></PublicLayout>} />
+          <Route path="/projects" element={<PublicLayout><Project /></PublicLayout>} />
+          <Route path="/leadership" element={<PublicLayout><Leadership /></PublicLayout>} />
+          <Route path="/projects/:id" element={<PublicLayout><ProjectDetails /></PublicLayout>} />
 
-      <Routes>
-        {/* Public Routes */}
-        <Route
-          path="/"
-          element={
-            <PublicLayout>
-              <Home />
-            </PublicLayout>
-          }
-        />
-        <Route
-          path="/about"
-          element={
-            <PublicLayout>
-              <About />
-            </PublicLayout>
-          }
-        />
-        <Route
-          path="/services"
-          element={
-            <PublicLayout>
-              <Services />
-            </PublicLayout>
-          }
-        />
-        <Route
-          path="/contact"
-          element={
-            <PublicLayout>
-              <ContactMe />
-            </PublicLayout>
-          }
-        />
-        <Route
-          path="/projects"
-          element={
-            <PublicLayout>
-              <Project />
-            </PublicLayout>
-          }
-        />
-       {/* <Route
-          path="/projects/:id"
-          element={
-            <PublicLayout>
-              <Project />
-            </PublicLayout>
-          }
-        />  */}
-         <Route
-          path="/leadership"
-          element={
-            <PublicLayout>
-               <Leadership/>
-            </PublicLayout>
-          }
-        /> 
+          {/* Login */}
+          <Route path="/login" element={<Login />} />
 
-      <Route
-          path="/projects/:id"
-          element={
-            <PublicLayout>
-              <ProjectDetails/>
-            </PublicLayout>
-          }
-        /> 
+          {/* Admin Routes (Protected) */}
+          <Route path="/admin" element={<PrivateRoute><PrivateLayout><Admin /></PrivateLayout></PrivateRoute>} />
+          <Route path="/admin/projects" element={<PrivateRoute><PrivateLayout><AdminProjects /></PrivateLayout></PrivateRoute>} />
+          <Route path="/admin/activities" element={<PrivateRoute><PrivateLayout><AdminActivities /></PrivateLayout></PrivateRoute>} />
+          <Route path="/admin/news" element={<PrivateRoute><PrivateLayout><AdminNews /></PrivateLayout></PrivateRoute>} />
+          <Route path="/admin/hiring" element={<PrivateRoute><PrivateLayout><AdminHiring /></PrivateLayout></PrivateRoute>} />
+          <Route path="/admin/submission" element={<PrivateRoute><PrivateLayout><AdminSubmission /></PrivateLayout></PrivateRoute>} />
 
-      
-    
+          {/* Admin Add */}
+          <Route path="/admin/add-projects" element={<PrivateRoute><PrivateLayout><AddProjectsPage /></PrivateLayout></PrivateRoute>} />
+          <Route path="/admin/add-activities" element={<PrivateRoute><PrivateLayout><AddActivitiesPage /></PrivateLayout></PrivateRoute>} />
+          <Route path="/admin/add-news" element={<PrivateRoute><PrivateLayout><AddNewsPage /></PrivateLayout></PrivateRoute>} />
+          <Route path="/admin/add-hiring" element={<PrivateRoute><PrivateLayout><AddHiringPage /></PrivateLayout></PrivateRoute>} />
 
-        {/* Login Route */}
-        <Route path="/login" element={<Login />} />
+          {/* Admin Edit */}
+          <Route path="/admin/projects/:id" element={<PrivateRoute><PrivateLayout><AdminEditProductPage /></PrivateLayout></PrivateRoute>} />
+          <Route path="/admin/activities/:id" element={<PrivateRoute><PrivateLayout><EditServicesPage /></PrivateLayout></PrivateRoute>} />
+          <Route path="/admin/hiring/:id" element={<PrivateRoute><PrivateLayout><EditHiringPage /></PrivateLayout></PrivateRoute>} />
+          <Route path="/admin/news/:id" element={<PrivateRoute><PrivateLayout><EditNewsPage /></PrivateLayout></PrivateRoute>} />
+          <Route path="/admin/submission/:id" element={<PrivateRoute><PrivateLayout><EditSubmissionPage /></PrivateLayout></PrivateRoute>} />
 
-        {/* Private/Admin Routes */}
-        <Route
-          path="/admin"
-          element={
-            <PrivateRoute>
-              <PrivateLayout>
-                <Admin />
-              </PrivateLayout>
-            </PrivateRoute>
-          }
-        />
-        <Route
-          path="/admin/projects"
-          element={
-            <PrivateRoute>
-              <PrivateLayout>
-                <AdminProjects />
-              </PrivateLayout>
-            </PrivateRoute>
-          }
-        />
-        <Route
-          path="/admin/activities"
-          element={
-            <PrivateRoute>
-              <PrivateLayout>
-                <AdminActivities />
-              </PrivateLayout>
-            </PrivateRoute>
-          }
-        />
-        <Route
-          path="/admin/news"
-          element={
-            <PrivateRoute>
-              <PrivateLayout>
-                <AdminNews />
-              </PrivateLayout>
-            </PrivateRoute>
-          }
-        />
-        <Route
-          path="/admin/hiring"
-          element={
-            <PrivateRoute>
-              <PrivateLayout>
-                <AdminHiring />
-              </PrivateLayout>
-            </PrivateRoute>
-          }
-        />
-        <Route
-          path="/admin/submission"
-          element={
-            <PrivateRoute>
-              <PrivateLayout>
-                <AdminSubmission />
-              </PrivateLayout>
-            </PrivateRoute>
-          }
-        />
-        <Route
-          path="/admin/add-projects"
-          element={
-            <PrivateRoute>
-              <PrivateLayout>
-                <AddProjectsPage />
-              </PrivateLayout>
-            </PrivateRoute>
-          }
-        />
-        <Route
-          path="/admin/add-activities"
-          element={
-            <PrivateRoute>
-              <PrivateLayout>
-                <AddActivitiesPage />
-              </PrivateLayout>
-            </PrivateRoute>
-          }
-        />
-        <Route
-          path="/admin/add-news"
-          element={
-            <PrivateRoute>
-              <PrivateLayout>
-                <AddNewsPage />
-              </PrivateLayout>
-            </PrivateRoute>
-          }
-        />
-        <Route
-          path="/admin/add-hiring"
-          element={
-            <PrivateRoute>
-              <PrivateLayout>
-                <AddHiringPage />
-              </PrivateLayout>
-            </PrivateRoute>
-          }
-        />
-        <Route
-          path="/admin/projects/:id"
-          element={
-            <PrivateRoute>
-              <PrivateLayout>
-                <AdminEditProductPage />
-              </PrivateLayout>
-            </PrivateRoute>
-          }
-        />
-        <Route
-          path="/admin/activities/:id"
-          element={
-            <PrivateRoute>
-              <PrivateLayout>
-                <EditServicesPage />
-              </PrivateLayout>
-            </PrivateRoute>
-          }
-        />
-        <Route
-          path="/admin/hiring/:id"
-          element={
-            <PrivateRoute>
-              <PrivateLayout>
-                <EditHiringPage />
-              </PrivateLayout>
-            </PrivateRoute>
-          }
-        />
-        <Route
-          path="/admin/news/:id"
-          element={
-            <PrivateRoute>
-              <PrivateLayout>
-                <EditNewsPage />
-              </PrivateLayout>
-            </PrivateRoute>
-          }
-        />
-        <Route
-          path="/admin/submission/:id"
-          element={
-            <PrivateRoute>
-              <PrivateLayout>
-                <EditSubmissionPage />
-              </PrivateLayout>
-            </PrivateRoute>
-          }
-        />
-
-        {/* 404 - Optional */}
-        <Route
-          path="*"
-          element={
-            <PublicLayout>
-              <NotFound />
-            </PublicLayout>
-          }
-        />
-      </Routes>
+          {/* 404 Not Found */}
+          <Route path="*" element={<PublicLayout><NotFound /></PublicLayout>} />
+        </Routes>
+      </Suspense>
+    </>
   );
 };
 

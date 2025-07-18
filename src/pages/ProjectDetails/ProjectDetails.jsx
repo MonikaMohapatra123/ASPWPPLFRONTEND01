@@ -75,7 +75,7 @@ const ProjectDetails = () => {
       </div>
       <div className="pd-images">
         {project.photo?.map((img, i) => (
-          <img key={i} src={img.url} alt={`project-${i}`} className="pd-image" />
+          <img key={i} src={img.url} alt={`project-${i}`} className="pd-image" loading="lazy"/>
         ))}
       </div>
     </div>

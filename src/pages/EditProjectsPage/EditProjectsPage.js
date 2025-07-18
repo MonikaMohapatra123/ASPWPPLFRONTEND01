@@ -1,7 +1,4 @@
 
-
-
-
 import React, { lazy, Suspense } from 'react';
 import { getStoredData } from '../../json/fetchData'; // ✅ Import the fetch utility
 
