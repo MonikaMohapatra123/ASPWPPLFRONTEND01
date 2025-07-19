@@ -27,7 +27,7 @@ const AllServices = ({ service }) => {
             </h2>
             <hr className="allservices-line" />
             <p className="allservices-text">{item.details}</p>
-            <button>{item.Header || "View Details"}</button>
+            {/* <button>{item.Header || "View Details"}</button> */}
           </div>
         </div>
       ))}

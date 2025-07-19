@@ -1,221 +1,171 @@
-/* .directors-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px; 
-  width: 100%;
-  background-color: #f8fbfd;
-}
 
-.director-card {
-  text-align: center;
-  width: 200px;
+
+
+.key-members-container {
   padding: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 72%;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  
 }
 
-.director-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+.key-members-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  
 }
 
-.director-image {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border: 3px solid #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.director-name {
-  margin-top: 12px;
-  font-size: 15px;
-  font-weight: 600;
-  color: #001f5a;
-}
-
-.director-position {
-  font-size: 13px;
-  color: #004080;
-  margin-top: 4px;
-}
-
-
-@media (max-width: 500px) {
-  .director-card {
-    width: 100%;
-    max-width: 240px;
-  }
-
-  .director-image {
-    width: 100px;
-    height: 100px;
-  }
-} */
-
-
-
-
-
-
-.directors-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  justify-content: center;
-  padding: 40px 0;
-}
-
-/* Card wrapper */
-.director-card {
-  width: 280px;
+.key-member-card {
+  border-radius: 10px;
+  overflow: hidden;
   text-align: center;
-  background: transparent;
-  border: 1px solid #e0e0e0;
-  transition: all 0.3s ease;
-  padding-bottom: 20px;
   cursor: pointer;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
-.director-card:hover {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  transform: translateY(-5px);
+.key-member-card:hover {
+  transform: scale(1.05);
 }
 
-/* Image style */
-.director-image {
+.key-member-photo img {
   width: 100%;
-  height: auto;
-  display: block;
+  max-width: 310px;
+  height: 300px;
   object-fit: cover;
-  border-bottom: 1px solid #e0e0e0;
 }
 
-/* Name styling */
-.director-name {
-  margin-top: 20px;
-  font-size: 20px;
-  letter-spacing: 2px;
-  font-weight: 600;
-  color: #000;
+.key-member-details {
+  border: 0.2px solid #ddd;
+  padding: 20px;
+  width: 100%;
+  max-width: 280px;
+  text-align: left;
+  margin-bottom: 2rem;
 }
 
-/* Position styling */
-.director-position {
-  margin-top: 8px;
-  font-size: 15px;
+.key-member-details h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.key-member-details p {
+  margin: 0;
+  font-size: 1rem;
   color: #666;
 }
 
-
-/* Popup Modal Container */
-.director-modal {
+/* Popup Slide-in */
+.menu-bar {
   position: fixed;
   top: 0;
-  right: 0;
-  width: 350px;
+  right: -100%;
+  width: 700px;
   height: 100%;
-  background: #fff;
-  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  background: white;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
   z-index: 1000;
-  display: flex;
-  flex-direction: column;
-  animation: slideIn 0.3s ease-in-out;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+  padding: 20px;
+  overflow-y: auto;
 }
 
-/* Slide animation */
-@keyframes slideIn {
-  from {
-    right: -400px;
-  }
-  to {
-    right: 0;
-  }
+.menu-bar.active {
+  right: 0;
 }
 
-/* Modal Content Split: 80% image + 20% info */
-.modal-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  position: relative;
-  z-index: 1;
-}
-
-/* Image Area - Takes 80% height */
-.modal-image {
-  flex: 0 0 80%;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  margin: 0 20px;
-  margin-top: 50px;
-  border: none;
-  padding: 0;
-}
-
-/* Info Section - Takes 20% height */
-.modal-info {
-  flex: 0 0 20%;
-  padding: 10px 15px;
-  text-align: center;
-  box-sizing: border-box;
-}
-
-.modal-name {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 5px 0;
-}
-
-.modal-position {
-  font-size: 16px;
-  color: #555;
-  margin: 0;
-}
-
-/* Close Button - always on top */
 .close-button {
   position: absolute;
   top: 10px;
   right: 10px;
-  font-size: 28px;
-  background: rgba(255, 255, 255, 0.9);
-  border: none;
-  cursor: pointer;
-  padding: 4px 10px;
-  z-index: 1001;
   color: #000;
+  border: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-/* Responsive: Mobile devices */
-@media (max-width: 600px) {
-  .director-modal {
-    width: 100%;
+.close-button:hover {
+  background: #000;
+  color: #fff;
+}
+
+.menu-photo {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 3rem;
+  object-fit: cover;
+}
+
+.menu-bar h3 {
+  margin: 20px 0;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  color: #333;
+}
+
+.menu-bar p {
+  color: #666;
+  margin: 5px 0 10px;
+}
+
+/* Responsive */
+@media (max-width: 786px) {
+  .key-members-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
   }
 
-  .modal-image {
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
+  .key-member-card {
+    gap: 5px;
+    border-radius: 0;
   }
 
-  .modal-name {
-    font-size: 18px;
+  .key-member-photo img {
+    max-width: 100%;
+    height: auto;
   }
 
-  .modal-position {
-    font-size: 14px;
+  .key-member-details {
+    max-width: 100%;
+    padding: 15px;
+    text-align: center;
   }
 
-  .close-button {
-    top: 80px;
-    right: 10px;
-    font-size: 26px;
+  .key-member-details h3 {
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .key-member-details p {
+    font-size: 0.9rem;
+  }
+
+  .menu-bar {
+    width: auto;
+    margin-top: 4.3rem;
+    right: -100%;
+  }
+
+  .menu-bar.active {
+    right: 0;
+  }
+
+  .menu-bar h3 {
+    font-size: 1.3rem;
+  }
+
+  .menu-bar p {
+    font-size: 0.95rem;
   }
 }

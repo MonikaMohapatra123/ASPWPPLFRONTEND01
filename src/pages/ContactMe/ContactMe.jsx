@@ -1,6 +1,7 @@
 import React, { useState, useEffect, lazy, Suspense } from 'react';
 import Loader from '../../components/Loader/Loader';
 import { getStoredData } from '../../json/fetchData';
+import CompanyMap from '../../components/CompanyMap/CompanyMap';
 
 // Lazy load components
 const AllIntroTemplate = lazy(() => import('../../components/AllIntroTemplate/AllIntroTemplate'));
@@ -33,6 +34,7 @@ const ContactMe = () => {
           fields={data.contactFormFields}
           Api="https://aspwppl-backend.vercel.app/form"
         />
+        <CompanyMap/>
       </div>
     </Suspense>
   );

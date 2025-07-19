@@ -1,13 +1,12 @@
 
-
-
-
 import React, { useRef, useEffect, useState } from 'react';
 import './OurPresence.css';
 
 const OurPresence = () => {
   const [tooltip, setTooltip] = useState({ text: '', x: 0, y: 0 });
-  const [activeElement, setActiveElement] = useState(null);
+  // const [activeElement, setActiveElement] = useState(null);
+  const [activeElement, setActiveElement] = useState('Telangana');
+
   const [projects, setProjects] = useState([]);
 
 
@@ -56,12 +55,32 @@ const OurPresence = () => {
     }
   };
 
+  // useEffect(() => {
+  //   document.addEventListener('mousedown', handleClickOutside);
+  //   return () => {
+  //     document.removeEventListener('mousedown', handleClickOutside);
+  //   };
+  // }, []);
   useEffect(() => {
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, []);
+  const fetchDefaultProjects = async () => {
+    try {
+      const response = await fetch('https://aspwppl-backend.vercel.app/projects');
+      const data = await response.json();
+      const stateName = 'Telangana'.toLowerCase();
+      const filtered = data.filter(
+        (project) =>
+          project.state && project.state.trim().toLowerCase().includes(stateName)
+      );
+      setProjects(filtered);
+      setTooltip({ text: 'Telangana', x: 0, y: 0 });
+    } catch (error) {
+      console.error('Error fetching default projects:', error);
+    }
+  };
+
+  fetchDefaultProjects();
+}, []);
+
 
   return (
     <div className='OurPresence-Container'>

@@ -1,4 +1,5 @@
 
+
 .OurPresence-Container {
   display: flex;
   flex-direction: row;
@@ -7,7 +8,7 @@
   background-color: #fff;
   border-radius: 10px;
   margin-top: 40px;
-  overflow-x: hidden; /* Prevent right side cutoff */
+  overflow-x: hidden; 
 }
 
 .OurPresence-mapSection {
@@ -57,6 +58,7 @@
   transform: translate(-38%, -50%);
   z-index: 1;
   opacity: 1;
+ 
 }
 
 .background-svg2 {
@@ -136,7 +138,6 @@
     height: auto;
     padding: 20px;
     align-items: flex-start;
-    /* background-color: var(--primary-color); */
     background-color: var(--text-color);
   }
 
@@ -169,7 +170,6 @@
   }
 }
 
-/* === Projects Section === */
 .OurPresence-Projects {
   margin-top: 20px;
   background: #f9f9f9;
@@ -178,7 +178,6 @@
   max-height: 400px;
   overflow-y: auto;
   width: 100%;
-
 }
 
 .OurPresence-Projects img {
@@ -265,7 +264,7 @@
   box-shadow: none;
 }
 
-/* === SVG State Circles === */
+/* ✅ Updated circles */
 .state-circle {
   r: 6;
   fill: #007bff;
@@ -273,15 +272,18 @@
   transition: all 0.3s ease;
   stroke: white;
   stroke-width: 1;
+  transform-origin: center; /* ✅ keeps scale centered */
 }
 
-.state-circle:hover {
-  transform: scale(1.2);
+/* ✅ Smooth hover but no shift */
+.state-circle:hover:not(.active) {
   fill: #3399ff;
+  /* transform removed to avoid shifting */
 }
 
+/* ✅ Fully red when active */
 .state-circle.active {
-  fill: #ff6347;
-  stroke: #ff4500;
+  fill: red;
+  stroke: red;
   stroke-width: 2;
 }
